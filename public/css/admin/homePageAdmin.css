@@ -106,7 +106,7 @@
     width: 130px;
     height: 40px;
     border-radius: 7px;
-    background: #fce001;
+    background: #F1F5F9;
     color: var(--textTitle);
     font-weight: 600;
     display: flex;
@@ -121,7 +121,7 @@
     width: 130px;
     height: 41px;
     border-radius: 7px;
-    background: #fce001;
+    background: #F1F5F9;
     color: var(--textTitle);
     font-weight: 600;
     display: flex;

@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\SitemapController;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoutingController;
 use App\Models\Product;
+use Spatie\Sitemap\Tags\Url;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +33,7 @@ use App\Models\Product;
     Route::get('/consulting', function(){return view("front.consulting");})->name('front.consulting');
     Route::get('/verify/certificate', function(){return view("front.verify");})->name('front.verify');
     Route::get('/cookies', function(){return view("front.cookies");})->name('front.cookies');
-    Route::get('/product/{product}', [App\Http\Controllers\ProductController::class, 'show'])->name('front.product');
+    Route::get('/product/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('front.product');
     Route::get('/infoPdf', function(){
       $path = "pdf/info.pdf";
       return response()->download($path, 'info.pdf');
@@ -39,7 +42,7 @@ use App\Models\Product;
 
     Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('front.blog');
     Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])->name('front.show.blog');
-
+    Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify');
 
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
@@ -159,12 +162,49 @@ Route::group(['middleware'=>'auth'], function () {
 });
 
 Route::get('/inv', function(){return view("pages.invoice");});
+Route::get('/buttons', function(){return view("ui.grid");});
 
 use App\Http\Controllers\SocialiteController;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/login/google', [SocialiteController::class, 'redirectToGoogle'])->name('google');
 Route::get('/login/google/callback', [SocialiteController::class, 'handleGoogleCallback']);
 
 
-Route::get('/generate-sitemap', [SitemapController::class, 'generate']);
-Route::get('/generate-sitemap', [SitemapController::class, 'generate']);
+Route::get('/generate-sitemap', function () {
+
+    $sitemap = Sitemap::create();
+
+    // Static pages
+    $sitemap->add(Url::create(route('frontHome')));
+    $sitemap->add(Url::create(route('terms')));
+    $sitemap->add(Url::create(route('front.products')));
+    $sitemap->add(Url::create(route('front.team')));
+    $sitemap->add(Url::create(route('front.contact')));
+    $sitemap->add(Url::create(route('front.faq')));
+    $sitemap->add(Url::create(route('front.consulting')));
+    $sitemap->add(Url::create(route('front.verify')));
+    $sitemap->add(Url::create(route('front.cookies')));
+    $sitemap->add(Url::create(route('front.blog')));
+
+    // Products (dynamic)
+    Product::all()->each(function ($product) use ($sitemap) {
+        $sitemap->add(
+            Url::create(route('front.product', $product->slug))
+                ->setLastModificationDate($product->updated_at)
+        );
+    });
+
+    // Blogs (dynamic)
+    Blog::all()->each(function ($blog) use ($sitemap) {
+        $sitemap->add(
+            Url::create(route('front.show.blog', $blog->slug))
+                ->setLastModificationDate($blog->updated_at)
+        );
+    });
+
+    $sitemap->writeToFile(public_path('sitemap.xml'));
+
+    return '✅ Sitemap generated successfully!';
+});

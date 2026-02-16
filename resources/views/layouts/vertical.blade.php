@@ -28,9 +28,6 @@
         [x-cloak] { display: none; }
     </style>
 
-
-
-
 </head>
 
 <body>
@@ -87,12 +84,13 @@
     </div>
     <!-- END wrapper -->
     <script>
-        window.replainSettings = { id: '026d1438-5b42-4350-b663-dcd99f150913' };
+        window.replainSettings = { id: '4ca76446-067f-4bd3-bf12-f8cdcd962c13' };
         (function(u){var s=document.createElement('script');s.async=true;s.src=u;
             var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
         })('https://widget.replain.cc/dist/client.js');
     </script>
-
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ asset('js/stripe.js') }}"></script>
 
     @yield('modal')
 

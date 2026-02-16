@@ -32,7 +32,7 @@
             <div class="teamTitle" style="text-align: center;">
                 <div class="modalTitle contact-button">
                     <span>Click the WhatsApp icon ➤</span>
-                    <span><a href="https://wa.me/353894631967"><img class="whatsapp-icon" src="{{asset('images/logo/whatsapp.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>
+                    <span><a href=""><img class="whatsapp-icon" src="{{asset('images/logo/whatsapp.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>
                     <span>to switch to our live chat instantly.</span>
                 </div>
             </div>
@@ -40,12 +40,12 @@
             <div class="teamTitle" style="text-align: center;">
                 <div class="modalTitle contact-button">
                     <span>Click the live chat icon on our website ➤</span>
-                    <span><a href="https://wa.me/353894631967"><img class="whatsapp-icon" src="{{asset('images/logo/replay.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>
+                    <span><a href=""><img class="whatsapp-icon" src="{{asset('images/logo/replay.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>
                     <span>available in the bottom right corner whenever you need help; we're online.</span>
                 </div>
             </div>
             <div class="delimiter"></div> <!-- Linia de delimitare -->
-            <div class="teamDescription" > Our operating hours are from 10am to 7pm, Monday to Friday, and from 10am to 7pm on weekends and bank holidays. You can also reach us via email at info@Ireland-SafetyTraining.com or 0894631967. | 20 Foxborough Close, Balgaddy, Lucan, Co. Dublin, K78 AN24, Ireland </div>
+            <div class="teamDescription" > Our operating hours are from 10am to 7pm, Monday to Friday, and from 10am to 7pm on weekends and bank holidays. You can also reach us via email at info@Ireland-SafetyCourse.com or 0894631967. | 20 Foxborough Close, Balgaddy, Lucan, Co. Dublin, K78 AN24, Ireland </div>
         </div>
 
     </div>

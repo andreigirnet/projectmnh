@@ -35,7 +35,7 @@
             <div class="noticeText">
                 You have received the course/courses, either through your own purchase or from your employer.
                 <br>
-                To commence the training, please activate it by clicking the link below and then proceed by pressing the "Study" button to get started.
+                To commence the training, please activate it by clicking the link below and then proceed by pressing the "Start Course" button to get started.
                 <br><br>
                 Follow the link bellow
                 <br>
@@ -96,7 +96,7 @@
                                 <input type="hidden" value="{{$product->id}}" name="productId">
                                 <div class="productButtonsBack">
                                     @if($product->description)
-                                        <a href="{{route('front.product', $product->id)}}" class="homeInfoCourseButton">Info</a>
+                                        <a href="{{route('front.product', $product->slug)}}" class="homeInfoCourseButton">Info</a>
                                     @endif
                                         <button type="submit" class="buttonProductAdminAddBack">Add To Basket</button>
                                 </div>

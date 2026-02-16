@@ -46,7 +46,7 @@
 <body>
 
 <div id="container">
-    <img src="https://ireland-safetytraining.com/images/certificate/{{ $image }}.jpg" id="image" alt="">
+    <img src="https://ireland-safetytraining.com/images/certificate/{{ $image }}.png" id="image" alt="">
     <div id="holder">{{$holder->name}}</div>
     <div id="id">{{$certificate[0]->unique_id}}</div>
     <div id="valid">{{ \Carbon\Carbon::parse($certificate[0]->valid_from)->format('Y-m-d') }}</div>

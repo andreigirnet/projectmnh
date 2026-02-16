@@ -30,8 +30,8 @@
 
     <div id="swiper-button-next"><img class="navArrow" src="{{asset("images/arrows/right.png")}}" alt=""></div>
 </div>
-<div class="webman">
+<div class="copyright">
     <p style="color: white; font-size: 18px">
-        Copyright © 2016-2024 Ireland-SafetyTraining.com | Safety Ireland Ltd | Email: info@Ireland-SafetyTraining.com
+        Copyright © 2010-2026 Ireland-SafetyCourse.ie | Safety Ireland Course Ltd | Email: info@Ireland-SafetyCourse.ie
     </p>
 </div>

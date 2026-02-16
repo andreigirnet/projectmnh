@@ -4,17 +4,17 @@
     <!-- Brand Logo Light -->
     <a href="{{route('home')}}" class="logo logo-light">
         <span class="logo-lg">
-            <img src="/images/login/whiteLoginLogo.png" alt="logo" style="height: 50px">
+            <img src="/images/logo/whiteLoginLogo.png" alt="logo" style="height: 50px">
         </span>
         <span class="logo-sm">
-            <img src="/images/login/smallLogo.png" alt="small logo" style="height: 30px">
+            <img src="/images/logo/whiteLoginLogo.png" alt="small logo" style="height: 30px">
         </span>
     </a>
 
     <!-- Brand Logo Dark -->
     <a href="{{route('home')}}" class="logo logo-dark">
         <span class="logo-lg">
-            <img src="/images/login/darkLoginLogo.png" alt="dark logo"style="height: 50px">
+            <img src="/images/logo/whiteLoginLogo.png" alt="dark logo"style="height: 50px">
         </span>
         <span class="logo-sm">
             <img src="/images/login/smallLogo.png" alt="small logo" style="height: 30px">

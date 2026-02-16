@@ -76,7 +76,7 @@
 
             At Irish-ManualHandling.com, we collaborate with organizations to support the ongoing implementation of a health and safety program through audits and inspections, the development of hazard-specific policies and procedures, and as the outsourced health and safety management as required.<br>
 
-            If you have questions about our Advisory service offering or what is required for your workplace by the act and legislation, you can schedule a consultation with our team directly at {{ config('app.telephone') }}.
+            If you have questions about our Advisory service offering or what is required for your workplace by the act and legislation, you can schedule a consultation with our team directly in chat.
         </div>
     </div>
 @endsection

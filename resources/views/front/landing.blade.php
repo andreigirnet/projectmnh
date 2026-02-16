@@ -1,7 +1,7 @@
 @extends('front.app')
 @section('content')
     <div id="mainBanner">
-        <img src="{{asset('images/banners/BackgroundIreland.jpg')}}" class="warehouse" alt="">
+        <img src="{{asset('images/banners/BackgroundIreland.png')}}" class="warehouse" alt="">
 {{--        <video autoplay muted loop class="warehouse" >--}}
 {{--            <source src="video/bannerVideoBig.mp4" type="video/mp4">--}}
 {{--        </video>--}}
@@ -38,6 +38,7 @@
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
     <div class="productSection">
+        <img src="{{asset('images/manualanimation.gif')}}" alt="Person lifting a box safely" class="gifImage">
         <div class="productWrapper">
             <div class="adminProducts">
                 @foreach($products as $product)
@@ -78,7 +79,7 @@
                                     <div class="productButtons">
                                         <a href="{{route('home')}}" class="buttonProductAdminAdd">Add To Basket</a>
                                         @if($product->description)
-                                            <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>
+                                            <a href="{{route('front.product', $product->slug)}}" class="homeStartCourseButton">Info</a>
                                         @endif
                                     </div>
 {{--                                </form>--}}

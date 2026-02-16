@@ -2,17 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{-- Title --}}
-    <title>Irish-ManualHandling - {{$blog->title}}</title>
-    {{-- Meta description --}}
-    <meta name="description" content="Discover Our Fully Online Manual Handling Course! ⭐️ Average Duration: 1 Hour ⭐️ Digital Certificate Provided ⭐️ Unlimited Exam Attempts ⭐️ Recognized in Ireland, UK, and Across Europe ⭐️ Valid for 3 Years">
-    {{-- Fonts --}}
+    <meta charset="UTF-8">
+    {!! SEO::generate() !!}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
     {{-- Css --}}
-    <link rel = "icon" href ="{{asset('images/logo/flavicons.png')}}" type = "image/x-icon">
+    <link rel = "icon" href ="{{asset('images/logo/flavicons.ico')}}" type = "image/x-icon">
     <link rel="stylesheet" href="{{asset("css/main.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/registerInclude.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/footer.css")}}">

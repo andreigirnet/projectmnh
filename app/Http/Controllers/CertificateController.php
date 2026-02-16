@@ -137,6 +137,7 @@ class CertificateController extends Controller
     /**
      * Display the specified resource.
      */
+
     public function show(Certificate $certificate)
     {
         //
@@ -156,6 +157,21 @@ class CertificateController extends Controller
     public function update(Request $request, Certificate $certificate)
     {
         //
+    }
+    public function verify(Request $request)
+    {
+        $request->validate([
+            'unique_id' => 'required|string',
+        ]);
+
+        // Search the database for the unique_id
+        $certificate = Certificate::where('unique_id', $request->unique_id)->first();
+
+        if ($certificate) {
+            return back()->with('success', "Valid Certificate! Issued to: " . $certificate->name);
+        }
+
+        return back()->with('fail', "Invalid Certificate. This ID does not exist in our records.");
     }
 
     /**

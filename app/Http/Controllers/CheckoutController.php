@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\CertificateMail;
 use App\Mail\ConfirmPaymentMail;
 use App\Models\Basket;
+use App\Models\Certificate;
 use App\Models\Order;
 use App\Models\Package;
 use Illuminate\Http\RedirectResponse;
@@ -79,7 +80,7 @@ class CheckoutController extends Controller
                     'currency' => 'eur',
                     'confirmation_method' => 'manual',
                     'confirm' => true,
-                    'statement_descriptor' => 'Ireland-SafetyTraining',
+                    'statement_descriptor' => 'IrelandSafetyCourse',
                     'customer'=> $customer->id,
                     'description' => 'Payment made by '. auth()->user()->email,
                     'return_url' => url('/payment/success')
@@ -161,6 +162,7 @@ class CheckoutController extends Controller
     /**
      * Display the specified resource.
      */
+
     public function show(string $id): Response
     {
         //

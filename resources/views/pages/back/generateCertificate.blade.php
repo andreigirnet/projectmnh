@@ -42,7 +42,7 @@
         }
         #holder{
             position: absolute;
-            top: 31%;
+            top: 29%;
             width: 100%;
             text-align: center;
             font-size: 50px;
@@ -54,7 +54,7 @@
 
 <div>
     <div id="container">
-        <img src="images/certificate/{{ $image }}.jpg" id="image" style="width: 100%" alt="">
+        <img src="images/certificate/{{ $image }}.png" id="image" style="width: 100%" alt="">
         <div id="holder">{{$holder->name}}</div>
         <div id="id">{{$certificate[0]->unique_id}}</div>
         <div id="valid">{{ \Carbon\Carbon::parse($certificate[0]->valid_from)->format('Y-m-d') }}</div>

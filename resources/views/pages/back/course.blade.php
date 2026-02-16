@@ -503,34 +503,19 @@
                         <video autoplay muted controls class="practicalVideo" id="practiceVideo">
                             <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
                         </video>
-                        <div class="videoTextManual">
-                            <div class="modalTitle">IMPORTANT</div>
-                            <div class="modalText">Please notice, you must complete your self assessment with our team as required, so you can get the full certificate straight away after that.  This training is covering the full theory and practical part as required by Irish Legislation and regarding that you can use your certificate for any jobs for 3 years after the full course is completed. The self assessment it’s delivered online.
-                                <br>
-
-                                <br>
-                                It is your responsibility to get in touch with our team as instructed (through WhatsApp chat on +353{{config('app.telephone')}} texts only) to organise the practical part for your Manual Handling Training a.s.a.p ( within 24-48hrs ) and to have your full course done. After that you will receive your certificate via email straight away. Follow the information below regarding the self assessment.
-                                <br>
-                                <br>
-                                Kind Regards
-                            </div>
-                            <div class="modalTitle">Contact Us Via WhatsApp On this line</div>
-                            <div class="modalTitle">+353{{config('app.telephone')}} texts only</div>
-                        </div>
-                        <div class="videoText">
-                            <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong>
-                            <br><br>
-                            You can watch the video demonstration attached on our website and record after that your video showing how to lift up and carry the load safely and send it back to us through this chat and we'll check that for you.
-                            No need to explain the steps if you don’t feel confident about that. Also,it’s not mandatory to wear special equipment (such as PPE) during this process.You can record it in any work environment or at home if you wish so.<br><br>
-                            The steps required are:<br><br>
-                            *Assess the area /*Assess the load/*Get a good stable base, feet flat on the floor in the line with your shoulders/*Bend the knees/*Keep your back straight /*Take the load from the floor with a good palm grip (one palm at the front side and another palm at the bottom)/*Hold the load close to your body/*Turn around with your feet,don’t twist your body<br><br>
-                            It’s important to lift the load from the floor/ground and place it on the table (or any other surface available ) and then back on the floor by following all the steps above.
-                            You can use anything as a load in case you don’t have a box.
-                            Please watch the video demonstration as advised.<br><br>
-                            You can send your video demonstration to our team through the Whatsapp chat on +353{{config('app.telephone')}} and our instructors will evaluate that for you a.s.a.p.
-                            Our team is assisting all our customers with a prompt response during our working hours.Sometimes our team might assist you outside our usual working program but during our fixed hours you will  definitely be assisted without any delay.<br><br>
-                            If you wish to book a live video call with one of our instructors  to complete the self assessment please send a text message with your full name and email address that was used for your training and with your request regarding that. All the certificates are emailed to everyone straight away after the full course is fully completed.
-                        </div>
+                        <strong>Congratulations! You have passed the test successfully.</strong>
+                        Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
+                        <br><br>
+                        Remember, you can access our website anytime by using your personal password & email address and download the certificate or review the course content if you wish so.
+                        <br><br>
+                        Please do get in touch if we can be of any further assistance!<br><br>
+                        Best regards<br>
+                        <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === false" style="margin-top: 20px">
+                            @csrf
+                            <input type="hidden" name="userId" value="{{auth()->user()->id}}">
+                            <input type="hidden" name="productId"  x-bind:value="productId">
+                            <button type="submit" class="downCertificate">Get Certificate</button>
+                        </form>
                     </div>
                 </template>
                 <template x-if="productId === '2'">

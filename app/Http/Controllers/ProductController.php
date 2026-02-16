@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -47,10 +48,12 @@ class ProductController extends Controller
         $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images/productAdd'), $imageName);
         $price = floatval($request->input('price'));
+        $slug = Str::slug($request->product_name, '-');
         // Create a new Product instance
         $product = new Product([
             'name' => $request->input('product_name'),
             'image' => $imageName,
+            'slug' => $slug,
             'durationTraining' => $request->input('duration'),
             'certificateValidity' => $request->input('validity'),
             'trainer'=> $request->trainer,

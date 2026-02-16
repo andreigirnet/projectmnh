@@ -8,11 +8,14 @@
     --mainWidth: 1178px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.logoradius{
+    border-radius: 10px;
+}
 
 .language-picker {
-    position: absolute;
-    top: 72px;
-    right: 10px;
+    /*position: absolute;*/
+    /*top: 72px;*/
+    /*right: 10px;*/
     display: flex;
     align-items: center;
     z-index: 10;
@@ -28,7 +31,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background: #163020 ;
+    background: #1e1e19 ;
     color: white;
 }
 
@@ -131,6 +134,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #mainLogo img{
@@ -138,6 +142,7 @@ a{
 }
 .logoMainLink{
     padding: 5px 0px;
+
 }
 
 #navMenu{
@@ -149,6 +154,8 @@ a{
 .navItem{
     padding: 10px;
     cursor: pointer;
+    backdrop-filter: blur(0px);
+    transition: 0.3s ease;
 }
 
 a .navItem{
@@ -224,7 +231,9 @@ a .navItem{
 
 /* Main page Hovers */
 .navItem:hover{
-    background: var(--hoverColor);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
 }
 
 /*!*Media Responisve*!*/
@@ -287,9 +296,95 @@ a .navItem{
 /*        padding: 9px;*/
 /*    }*/
 /*}*/
+:root {
+    --bg-dark: #111611;
+    --accent-orange: #FF8C00;
+    --text-white: #ffffff;
+    --glass-bg: rgba(17, 22, 17, 0.75);
+}
 
+.modern-nav {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1400px;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px; /* Modern pill shape */
+    padding: 10px 30px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brand styling */
+.brand img {
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.brand:hover img {
+    transform: scale(1.05);
+}
+
+/* Link styling */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    opacity: 0.85;
+}
+
+.nav-links a:hover {
+    color: var(--accent-orange);
+    opacity: 1;
+}
+
+/* Utility & CTA Styling */
+.nav-utils {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-login {
+    background: var(--accent-orange);
+    color: var(--bg-dark) !important;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-login:hover {
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.active-flag {
+    width: 20px;
+    border-radius: 2px;
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px){
+    .modern-nav{
+        display: none;
+    }
     #navMenu{
         display: flex;
         justify-content: space-between;

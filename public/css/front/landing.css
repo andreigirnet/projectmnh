@@ -11,7 +11,13 @@
     background-size: cover;
     overflow: hidden;
 }
-.webman{
+.gifImage{
+    position: absolute;
+    width: 200px;
+    left: 500px;
+    top: -100px;
+}
+.copyright{
     background-color: #262626;
     height: 80px;
     display: flex;
@@ -20,7 +26,7 @@
     font-size: 23px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-.webman p{
+.copyright p{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +59,8 @@
     width: 100%;
     position: absolute;
     z-index: 0;
-    top: -79px
+    top: -10px;
+    background-position: top;
 }
 .mainBannerContent{
     display: flex;
@@ -254,6 +261,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .productSection{
     width: 100%;
@@ -789,7 +797,118 @@
 .spaceTop{
     margin-top: 200px;
 }
+#titleCertificate{
+    margin-top: 30px;
+}
+.vrt-main-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+    /* Light, airy background gradient */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vrt-glass-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    /* Frosted White Glass */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Crucial for light mode: a solid but faint border */
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    /* Soft shadow to create depth on a light background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.vrt-title {
+    color: #1a202c;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.vrt-subtitle {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.vrt-input-field {
+    width: 100%;
+    padding: 12px 16px;
+    /* White input with a hint of transparency */
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    color: #2d3748;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.vrt-input-field:focus {
+    border-color: #4299e1;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.vrt-submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #3182ce;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.vrt-submit-btn:hover {
+    background: #2b6cb0;
+}
+
+/* Success/Fail Alerts */
+.vrt-alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.vrt-alert-success {
+    background: #f0fff4;
+    border-left: 4px solid #38a169;
+    color: #276749;
+}
+
+.vrt-alert-error {
+    background: #fff5f5;
+    border-left: 4px solid #e53e3e;
+    color: #9b2c2c;
+}
 @media only screen and (max-width: 1200px) {
+    #titleCertificate{
+        margin-top: 0px;
+    }
+    .gifImage{
+        display: none;
+    }
     .product-info{
         width: 100%;
     }
@@ -928,7 +1047,7 @@
     .pulse-button{
         width: 200px;
     }
-    .webman p{
+    .copyright p{
         display: flex;
         align-items: center;
         text-align: center;
@@ -936,7 +1055,7 @@
         row-gap: 5px;
         font-size: 16px;
     }
-    .webman{
+    .copyright{
         height: 260px;
     }
     #overImgDash{

@@ -40,12 +40,12 @@
                         <div class="col-lg-6">
                             <div class="d-flex flex-column h-100">
                                 <div class="auth-brand p-4">
-                                    <a href="" class="logo-light">
-                                        <img src="/images/login/whiteLoginLogo.png" alt="logo" height="70">
-                                    </a>
-                                    <a href="" class="logo-dark">
-                                        <img src="/images/login/darkLoginLogo.png" alt="dark logo" height="70">
-                                    </a>
+{{--                                    <a href="" class="logo-light">--}}
+{{--                                        <img src="/images/login/whiteLoginLogo.png" alt="logo" height="70">--}}
+{{--                                    </a>--}}
+{{--                                    <a href="" class="logo-dark">--}}
+{{--                                        <img src="/images/login/darkLoginLogo.png" alt="dark logo" height="70">--}}
+{{--                                    </a>--}}
                                 </div>
                                 <div class="p-4 ">
                                     <h4 class="fs-20">Create a new password</h4>

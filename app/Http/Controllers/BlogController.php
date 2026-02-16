@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Http\Controllers\Controller;
+use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -70,7 +72,7 @@ class BlogController extends Controller
 
         $blogUrl = url("/blog/{$blog->slug}");
         $blogUrl = str_replace("http://", "https://", $blogUrl);// Update this based on your blog URL structure
-        $sitemapPath = public_path('site-map.xml'); // Update this based on your actual sitemap path
+        $sitemapPath = public_path('sitemap.xml'); // Update this based on your actual sitemap path
 
         if (File::exists($sitemapPath)) {
             $sitemapContent = File::get($sitemapPath);
@@ -94,6 +96,12 @@ class BlogController extends Controller
     public function show($slug)
     {
         $blog = Blog::where('slug', $slug)->firstOrFail();
+
+        SEOTools::setTitle($blog->title);
+        SEOTools::setDescription($blog->description);
+        SEOTools::setCanonical(url()->current());
+        SEOTools::addImages(asset('images/blogImages/' . $blog->image));
+
         return view('pages.blog.singleBlog', compact('blog'));
     }
 

@@ -1,31 +1,36 @@
 <x-mail::message>
-    # Welcome to [Irish-ManualHandling.com](https://www.irish-manualhandling.com/)
+    # Welcome to [irelandSafetyCourse.ie](https://www.irelandsafetycourse.ie/)
 
+    Dear Customer,
 
-   Dear Customer,
-   Welcome to our online training service and thanks for choosing our platform.
-   This email is just a kind reminder about your registration that was successfully processed, on our website:
+    Welcome to our online training service and thank you for choosing our platform. This email is a confirmation that your registration has been successfully processed on our website:
 
-   [Irish-ManualHandling.com](https://www.irish-manualhandling.com/)
+    [irelandSafetyCourse.ie](https://www.irelandsafetycourse.ie/)
 
+    ### Getting Started
+    You can access our website at any time to begin your training at your convenience. Simply log in using your email and password via the link below:
 
-   You can access our website anytime you wish and take the course at your best convenient time by using the link  [Irish-ManualHandling.com](https://www.irish-manualhandling.com/) (use your login details : email and password).
-   If you have the course completed already,you can access our website anytime you wish so and get the free access to the course content or to your Certificate in case if lost (we offer 3 years free access to that).
-   You can also get an invoice for your payment after it’s done successfully on our website (on the blue bar menu from the left of the screen Open the Billing>Orders>click on the pdf file that will generate your invoice).
+    [irelandSafetyCourse.ie](https://www.irelandsafetycourse.ie/)
 
-   If you are an employer and wish to have a group of people registered for this course (staff members for example) please read the information in the FAQ section first and find all the steps regarding the process.
+    ### Course Access & Certification
+    * **Existing Users**: If you have already completed the course, you can still log in to review the course materials for free at any time.
+    * **Lost Certificates**: If you lose your certificate, we provide **3 years of free access** to download it whenever needed.
+    * **Invoices**: To retrieve your invoice, log in and navigate to the sidebar menu on the left. Go to **Billing > Orders** and click on the PDF icon to generate your document.
 
-   If you don’t remember your password please access the link below to have it reset and check your email after, because you will receive an instant password that allows you to get back to our training platform and take the course (please check your spam and junk mail just in case).
+    ### Group Training for Employers
+    If you are an employer looking to register a team or staff members, please visit our **FAQ section** first. It contains a step-by-step guide on how to manage group enrollments effectively.
 
+    ### Account Support
+    If you have forgotten your password, please use the reset link below. You will receive an automated password via email instantly—please remember to check your spam or junk folders if it does not appear in your inbox.
 
-   [Irish-ManualHandling.com](https://www.irish-manualhandling.com)
+    [Reset Password Here](https://www.irelandsafetycourse.ie/forgot-password)
 
+    ### Need Help?
+    If you require any additional information or further assistance, please reach out to us:
+    * **Email**: info@irelandsafetycourse.ie
+    * **Support**: Use the **Online Chat** on our website or contact us directly via our **WhatsApp Chat**.
 
-   If you need any additional information or any further assistance feel free to email us at  [Irish-ManualHandling.com](https://www.irish-manualhandling.com/) use the chat on our website/ give us a call to 0894631967/ or directly via Whatas Up Chat.
-
-
-   Kind regards,<br>
- Irish Manual Handling Team
-
+    Kind regards,
+    **The Ireland Safety Course Team**
 
 </x-mail::message>

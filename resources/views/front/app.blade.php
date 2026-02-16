@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- Title --}}
-    <title>Ireland Safety Training - Online Safety Courses with Certificates</title>
+    <title>{{ config('app.name', 'Laravel') }} - Online Safety Courses from €25</title>
     {{-- Meta description --}}
-    <meta name="description" content="Discover Our Fully Online Safety Courses and Training ⭐️ Average Duration: 1 Hour ⭐️ Digital Certificate Provided ⭐️ Unlimited Exam Attempts ⭐️ Recognized in Ireland, UK, and Across Europe">
+    <meta name="description" content="Get certified for only €25! Fully online safety courses. ⭐️ 1 Hour Duration ⭐️ Digital Certificate ⭐️ Unlimited Exam Attempts. Recognized in Ireland & UK.">
     <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
-    {{-- Fonts --}}
-    <meta property="og:image" content="https://www.irish-manualhandling.com/images/metaImage.jpg">
+    {{-- Open Graph / Facebook --}}
+    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
+    <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
+    <meta name="format-detection" content="telephone=yes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="Online Safety Courses Ireland | CPD Certified - {{ config('app.name') }}">
+    <meta property="og:description" content="Get certified in 1 hour with our fully online safety courses. Recognized in Ireland, UK, and Europe. Unlimited exam attempts included.">
+    <meta property="og:image:alt" content="Ireland Safety Course - Accredited Online Training">
+    <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
@@ -43,18 +54,17 @@
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
-@include("frontIncludes/subNav")
-@include("frontIncludes/subNavMobile")
+{{--@include("frontIncludes/subNav")--}}
+{{--@include("frontIncludes/subNavMobile")--}}
 
 @yield('content')
 
 
-
 <script>
-window.replainSettings = { id: '9f43da79-85c0-4dd0-9467-72fe6bdf1bff' };
-(function(u){var s=document.createElement('script');s.async=true;s.src=u;
-var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
+    window.replainSettings = { id: '4ca76446-067f-4bd3-bf12-f8cdcd962c13' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
 </script>
 @include("frontIncludes/registerInclude")
 @include("frontIncludes/footer")

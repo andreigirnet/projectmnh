@@ -1,50 +1,122 @@
 {
     "en": {
-        "teamTitle": "Train teams effectively and efficiently",
-        "teamDescription": "At Irish Manual Handling, we take pride in being available to assist you with a variety of training needs across multiple subjects. Our e-learning courses are entirely online, allowing you to conveniently access the training required by you and your company. Whether in your free time or during work hours, our courses are accessible at any time of the day.",
-        "bulkDiscount": ["Bulk Discounts","The more you order, the greater the discount. Our bulk discounts apply to orders featuring a mix of courses. These courses have no time limit for completion, allowing you to maximize your training opportunities. -10% discount for orders of 10+ courses For larger enterprise orders exceeding 500 courses, we handle them on an individual basis. This involves creating a tailored package to meet your specific needs, including the following benefits: A dedicated Account Manager Course reset options if an employee leaves your company Customized reports and progress tracking within your personal Management Suite For a more detailed discussion about your training requirements and budget, please reach out to our friendly sales team via WhatsApp at +353894631967."],
-        "invoice": ["Can I pay by invoice?","Yes, you can! By opting for an invoice payment, you'll benefit from: 30-day payment terms for invoices Adding a company PO number if needed Access to training prior to invoice settlement* For lower quantities requiring invoicing, feel free to reach out directly, and we'll gladly assist. *Training certificates will be provided upon invoice payment."],
-        "urgent": ["Urgent training requirements? No problem...","Absolutely! From our self-service checkout system to instant online certification, we're here to expedite your team's training needs. Identifying skill gaps in your organization means every passing moment is either a missed opportunity or a quality risk. With our system, your team can start learning within minutes. Delivery of compliance training takes hours, not days. We can simultaneously train large numbers of users without logistical issues."],
-        "minim": ["Minimise disruption - train online","Conventional training involves halting work for all your staff to convene in one location. We advocate for a more efficient approach... Online training liberates you from the expenses and interruptions caused by assembling everyone in a single place for learning purposes. Accessible round the clock, 365 days a year, online training automatically saves your progress. Staff can train from anywhere, including while commuting."]
+        "teamTitle": "Efficient Workforce Training Solutions",
+        "teamDescription": "At Ireland Safety Course, we specialize in delivering comprehensive training tailored to your organizational needs. Our digital learning modules are 100% web-based, providing your staff with the flexibility to study at their convenience, whether during dedicated work blocks or outside of standard business hours.",
+        "bulkDiscount": [
+            "Volume Licensing",
+            "Maximize your budget with our scaled pricing model. Discounts are applied automatically to mixed-course orders. There is no expiration date for these licenses, allowing you to deploy training whenever necessary. Save 10% on orders of 10+ licenses. For large-scale enterprise requirements (500+ courses), we provide bespoke solutions. This includes a dedicated account representative, seat recycling options for staff turnover, and granular analytics via your corporate Management Suite. To discuss custom pricing and logistical needs, please message our sales team through the Online Chat."
+        ],
+        "invoice": [
+            "B2B Invoicing",
+            "Yes, we support corporate billing. By choosing the invoice option, you benefit from: 30-day net payment terms, custom PO number integration, and immediate training deployment*. If you require an invoice for smaller orders, simply reach out to us. *Please note that official certificates are released once the final balance is settled."
+        ],
+        "urgent": [
+            "Need Immediate Certification?",
+            "We’ve got you covered. Our automated portal and instant certificate generation are designed for speed. In a fast-paced industry, a skill gap is a liability. Our platform allows your team to begin their modules in seconds. Compliance training can be completed in hours, not days, allowing you to train hundreds of employees simultaneously without the logistical headaches of physical classrooms."
+        ],
+        "minim": [
+            "Eliminate Downtime with Online Learning",
+            "Traditional seminars require you to halt operations so staff can gather in one room. We offer a modern alternative. Digital training removes the travel costs and operational interruptions associated with in-person learning. Available 24/7/365, our system saves progress automatically, allowing staff to study from any location—even during a commute."
+        ]
     },
     "sp": {
-        "teamTitle": "Formar equipos de forma eficaz y eficiente",
-        "teamDescription": "En Irish Manual Handling, nos enorgullecemos de estar disponibles para ayudarlo con una variedad de necesidades de capacitación en múltiples temas. Nuestros cursos de aprendizaje electrónico son completamente en línea, lo que le permite acceder cómodamente a la capacitación requerida por usted y su empresa. Ya sea en En tu tiempo libre o durante el horario laboral, nuestros cursos son accesibles en cualquier momento del día.",
-        "bulkDiscount": ["Descuentos por volumen","Cuanto más pidas, mayor será el descuento. Nuestros descuentos por volumen se aplican a pedidos que incluyan una combinación de cursos. Estos cursos no tienen límite de tiempo para completarse, lo que le permite maximizar sus oportunidades de capacitación. -10% de descuento para pedidos de más de 10 cursos. Para pedidos empresariales más grandes que superen los 500 cursos, los manejamos de forma individual. Esto implica crear un paquete personalizado para satisfacer sus necesidades específicas, que incluye los siguientes beneficios: Un administrador de cuentas dedicado. Opciones de reinicio del curso si un empleado deja su empresa. Informes personalizados y seguimiento del progreso dentro de su Management Suite personal. Para una discusión más detallada sobre sus requisitos de capacitación y presupuesto, comuníquese con nuestro amigable equipo de ventas a través de WhatsApp al +353894631967."],
-        "invoice": ["¿Puedo pagar mediante factura?", "¡Sí, puedes! Al optar por el pago mediante factura, disfrutarás de: Plazos de pago de 30 días para las facturas, Posibilidad de agregar un número de orden de compra de la empresa si es necesario, Acceso a la formación antes de liquidar la factura*. Para cantidades más pequeñas que requieran factura, no dudes en ponerte en contacto directamente, y estaremos encantados de ayudarte. *Se proporcionarán los certificados de formación una vez realizada la liquidación de la factura."],
-        "urgent": ["¿Requisitos de formación urgentes? ¡No hay problema...", "¡Absolutamente! Desde nuestro sistema de pago automático hasta la certificación en línea instantánea, estamos aquí para acelerar las necesidades de formación de tu equipo. Identificar brechas de habilidades en tu organización significa que cada momento que pasa es una oportunidad perdida o un riesgo de calidad. Con nuestro sistema, tu equipo puede comenzar a aprender en cuestión de minutos. La entrega de la formación de cumplimiento lleva horas, no días. Podemos capacitar simultáneamente a grandes cantidades de usuarios sin problemas logísticos."],
-        "minim": ["Minimiza las interrupciones: forma a tu personal en línea", "La formación convencional implica detener el trabajo para que todo tu personal se reúna en un solo lugar. Abogamos por un enfoque más eficiente... La formación en línea te libera de los gastos e interrupciones causados por reunir a todos en un solo lugar con fines de aprendizaje. Accesible las 24 horas, los 365 días del año, la formación en línea guarda automáticamente tu progreso. El personal puede capacitarse desde cualquier lugar, incluso mientras se desplaza."]
+        "teamTitle": "Soluciones de Capacitación Eficaces",
+        "teamDescription": "En Ireland Safety Course, nos especializamos en ofrecer una variedad de programas de capacitación adaptados a sus necesidades corporativas. Nuestros módulos son 100% en línea, lo que permite a sus empleados estudiar cuando mejor les convenga, ya sea durante la jornada laboral o en su tiempo libre.",
+        "bulkDiscount": [
+            "Descuentos por Volumen",
+            "Optimice su presupuesto con nuestro sistema de precios escalonados. Los descuentos se aplican automáticamente a pedidos de cursos mixtos. Estas licencias no tienen fecha de caducidad. Ahorre un 10% en pedidos de más de 10 licencias. Para necesidades corporativas de más de 500 cursos, ofrecemos soluciones a medida que incluyen un gestor de cuenta dedicado y seguimiento de progreso detallado. Para discutir presupuestos personalizados, escríbanos a través del Chat en Línea."
+        ],
+        "invoice": [
+            "Facturación para Empresas",
+            "¡Claro que sí! Al elegir el pago por factura, disfrutará de: plazos de pago de 30 días, integración de números de orden de compra y acceso inmediato a la formación*. Para pedidos pequeños que requieran factura, contáctenos directamente. *Los certificados oficiales se emitirán una vez liquidada la factura."
+        ],
+        "urgent": [
+            "¿Necesita Capacitación Urgente?",
+            "¡Sin problema! Desde nuestro sistema de pago automático hasta la certificación instantánea, estamos aquí para acelerar el cumplimiento de su equipo. Con nuestra plataforma, su personal puede empezar a aprender en minutos. La formación obligatoria se completa en horas, permitiendo capacitar a grandes grupos simultáneamente sin complicaciones logísticas."
+        ],
+        "minim": [
+            "Reduzca Interrupciones: Formación Online",
+            "La capacitación convencional detiene la productividad. El aprendizaje digital le libera de gastos de viaje e interrupciones operativas. Disponible las 24 horas, los 365 días del año, nuestro sistema guarda el progreso automáticamente. El personal puede estudiar desde cualquier lugar, incluso durante sus desplazamientos."
+        ]
     },
     "ro": {
-        "teamTitle": "Pregătiți echipe în mod eficient și eficient",
-        "teamDescription": "La Irish Manual Handling, suntem mândri că suntem disponibili pentru a vă ajuta cu o varietate de nevoi de formare pe mai multe subiecte. Cursurile noastre de e-learning sunt în întregime online, permițându-vă să accesați în mod convenabil formarea cerută de dvs. și de compania dvs. timpul liber sau în timpul orelor de lucru, cursurile noastre sunt accesibile în orice moment al zilei.",
-        "bulkDiscount": ["Reduceri în volum", "Cu cât comandați mai mult, cu atât reducerea este mai mare. Reducerile noastre în vrac se aplică comenzilor care includ o combinație de cursuri. Aceste cursuri nu au limită de timp pentru finalizare, permițându-vă să vă maximizați oportunitățile de formare. -10% reducere pentru comenzile de peste 10 cursuri Pentru comenzile întreprinderilor mai mari care depășesc 500 de cursuri, le gestionăm individual. Aceasta implică crearea unui pachet personalizat pentru a vă satisface nevoile specifice, inclusiv următoarele beneficii: Opțiuni de resetare a cursului dedicat Manager de cont dacă un angajat părăsește compania dvs. Rapoarte personalizate și urmărire a progresului în cadrul Suitei dvs. personale de management Pentru o discuție mai detaliată despre cerințele dvs. de formare și buget, vă rugăm să contactați echipa noastră prietenoasă de vânzări prin WhatsApp la +353894631967."],
-        "invoice": ["Pot plăti prin factură?", "Da, poți! Optând pentru plată prin factură, vei beneficia de: Termene de plată de 30 de zile pentru facturi, Posibilitatea de a adăuga un număr de comandă de la companie dacă este necesar, Acces la formare înainte de achitarea facturii*. Pentru cantități mai mici care necesită facturare, nu ezita să ne contactezi direct, și vom fi bucuroși să te ajutăm. *Certificatele de formare vor fi furnizate după plata facturii."],
-        "urgent": ["Cerințe urgente de formare? Nicio problemă...", "Absolut! De la sistemul nostru de plată automată la certificarea online instantanee, suntem aici pentru a accelera nevoile de formare ale echipei tale. Identificarea lacunelor de competențe în organizația ta înseamnă că fiecare moment care trece este fie o oportunitate ratată, fie un risc de calitate. Cu sistemul nostru, echipa ta poate începe să învețe în câteva minute. Livrarea formării de conformitate durează ore, nu zile. Putem forma simultan un număr mare de utilizatori fără probleme logistice."],
-        "minim": ["Minimizați întreruperile - formați-vă online", "Formarea tradițională implică oprirea muncii pentru ca tot personalul să se adune într-un singur loc. Noi pledăm pentru o abordare mai eficientă... Formarea online vă eliberează de cheltuielile și întreruperile cauzate de adunarea tuturor într-un singur loc în scopuri de învățare. Accesibilă non-stop, 365 de zile pe an, formarea online salvează automat progresul. Personalul poate face training de oriunde, inclusiv în timpul deplasărilor."]
+        "teamTitle": "Soluții de Instruire Eficientă pentru Echipe",
+        "teamDescription": "La Ireland Safety Course, suntem dedicați să vă sprijinim cu o gamă largă de cursuri adaptate nevoilor companiei dumneavoastră. Platforma noastră este 100% online, oferind angajaților flexibilitatea de a studia oricând, fie în timpul programului, fie în timpul liber.",
+        "bulkDiscount": [
+            "Reduceri de Volum",
+            "Cu cât comandați mai mult, cu atât economisiți mai mult. Reducerile se aplică automat pentru comenzile mixte. Licențele nu au termen de expirare. Reducere de 10% pentru comenzi de peste 10 cursuri. Pentru cerințe enterprise de peste 500 de cursuri, oferim pachete personalizate, manager de cont dedicat și rapoarte detaliate de progres. Pentru o discuție despre bugetul dumneavoastră, contactați-ne prin Chat-ul Online."
+        ],
+        "invoice": [
+            "Plată prin Factură",
+            "Da, acceptăm plata prin factură pentru companii. Beneficiați de: termen de plată de 30 de zile, adăugarea numărului de comandă (PO) și acces rapid la cursuri*. Pentru comenzi mici cu factură, vă rugăm să ne contactați. *Certificatele vor fi disponibile imediat după confirmarea plății."
+        ],
+        "urgent": [
+            "Instruire Urgentă?",
+            "Absolut! Sistemul nostru automatizat și certificarea instantanee sunt concepute pentru viteză. Angajații pot începe studiul în câteva minute. Instuirea pentru conformitate durează ore, nu zile, permițându-vă să instruiți volume mari de personal simultan, fără bariere logistice."
+        ],
+        "minim": [
+            "Minimizați Întreruperile prin Training Online",
+            "Trainingul tradițional necesită oprirea activității. Formarea online vă scapă de costurile de deplasare și de întreruperile operaționale. Accesibil 24/7, sistemul salvează automat progresul cursantului. Personalul se poate instrui de oriunde, inclusiv în timpul navetei."
+        ]
     },
     "pl": {
-        "teamTitle": "Szkolić zespoły skutecznie i efektywnie",
-        "teamDescription": "W Irish Manual Handling jesteśmy dumni, że możemy pomóc Państwu w zaspokojeniu różnorodnych potrzeb szkoleniowych z wielu przedmiotów. Nasze kursy e-learningowe są prowadzone w całości online, co pozwala na wygodny dostęp do szkoleń wymaganych przez Ciebie i Twoją firmę. Niezależnie od tego, czy w czasie wolnym lub w godzinach pracy, nasze kursy są dostępne o każdej porze dnia.",
-        "bulkDiscount": ["Zniżki zbiorcze","Im więcej zamówisz, tym większy rabat. Nasze rabaty hurtowe dotyczą zamówień obejmujących kombinację kursów. Kursy te nie mają limitu czasu na ukończenie, co pozwala zmaksymalizować możliwości szkoleniowe. -10% rabatu przy zamówieniach powyżej 10 kursów. W przypadku większych zamówień przedsiębiorstw powyżej 500 kursów, traktujemy je indywidualnie. Wiąże się to ze stworzeniem pakietu dostosowanego do Twoich konkretnych potrzeb, obejmującego następujące korzyści: Dedykowany kurs Account Managera Opcje resetowania w przypadku odejścia pracownika z Twojej firmy Dostosowane raporty i śledzenie postępów w ramach Twojego osobistego pakietu Management Suite Bardziej szczegółowe omówienie Twoich wymagań szkoleniowych i budżetu, skontaktuj się z naszym przyjaznym zespołem sprzedaży za pośrednictwem WhatsApp pod numerem +353894631967."],
-        "invoice": ["Czy mogę płacić fakturą?", "Tak, możesz! Wybierając płatność fakturą, skorzystasz z: Terminów płatności 30 dni dla faktur, Możliwość dodania numeru zamówienia firmy, jeśli jest to konieczne, Dostęp do szkolenia przed uregulowaniem faktury*. Dla mniejszych ilości wymagających faktur, śmiało skontaktuj się bezpośrednio, a z przyjemnością pomożemy. *Certyfikaty szkoleniowe zostaną dostarczone po uregulowaniu faktury."],
-        "urgent": ["Pilne wymagania szkoleniowe? Nie ma problemu...", "Oczywiście! Od naszego systemu samoobsługowego do natychmiastowej certyfikacji online, jesteśmy tu, aby przyspieszyć potrzeby szkoleniowe Twojego zespołu. Identyfikacja luk w umiejętnościach w Twojej organizacji oznacza, że każda chwila, która mija, to albo utracona szansa, albo ryzyko jakości. Dzięki naszemu systemowi, Twój zespół może zacząć naukę w ciągu kilku minut. Dostawa szkolenia z zgodności zajmuje godziny, nie dni. Możemy jednocześnie szkolić dużą liczbę użytkowników bez problemów logistycznych."],
-        "minim":  ["Minimalizuj zakłócenia - szkolenie online", "Konwencjonalne szkolenie wiąże się z zatrzymaniem pracy wszystkich pracowników, aby się zebrać w jednym miejscu. Postulujemy bardziej efektywne podejście... Szkolenie online uwalnia Cię od kosztów i przerw spowodowanych zbieraniem wszystkich w jednym miejscu w celach edukacyjnych. Dostępne przez całą dobę, 365 dni w roku, szkolenie online automatycznie zapisuje Twój postęp. Personel może szkolić się z dowolnego miejsca, nawet w trakcie dojazdów."]
+        "teamTitle": "Skuteczne Rozwiązania Szkoleniowe dla Firm",
+        "teamDescription": "W Ireland Safety Course specjalizujemy się w dostarczaniu kompleksowych szkoleń dostosowanych do potrzeb Twojej organizacji. Nasze moduły e-learningowe są w 100% dostępne online, co pozwala pracownikom na naukę w dogodnym dla nich czasie, bez zakłócania harmonogramu pracy.",
+        "bulkDiscount": [
+            "Rabaty Ilościowe",
+            "Im większe zamówienie, tym niższa cena jednostkowa. Rabaty naliczane są automatycznie przy zamówieniach mieszanych. Licencje są bezterminowe. Oszczędź 10% przy zakupie powyżej 10 kursów. W przypadku dużych zamówień korporacyjnych (powyżej 500 kursów) oferujemy indywidualne pakiety, dedykowanego opiekuna oraz zaawansowane raportowanie postępów. Aby omówić szczegóły, napisz do nas na Czacie Online."
+        ],
+        "invoice": [
+            "Płatność Fakturą",
+            "Tak, obsługujemy płatności fakturowane dla firm. Korzyści to: 30-dniowy termin płatności, możliwość dodania numeru zamówienia (PO) oraz szybki dostęp do szkoleń*. W przypadku mniejszych zamówień wymagających faktury, prosimy o kontakt. *Certyfikaty zostaną udostępnione po zaksięgowaniu wpłaty."
+        ],
+        "urgent": [
+            "Pilne Szkolenia?",
+            "Oczywiście! Nasz automatyczny system zakupowy i natychmiastowe wydawanie certyfikatów online pozwalają na błyskawiczne przeszkolenie zespołu. Dzięki nam pracownicy mogą zacząć naukę w kilka minut. Szkolenia BHP zajmują godziny, a nie dni, co pozwala na jednoczesne szkolenie setek osób bez problemów logistycznych."
+        ],
+        "minim": [
+            "Minimalizuj Przestoje: Szkol Online",
+            "Tradycyjne szkolenia wymagają przerwania pracy. E-learning eliminuje koszty podróży i przestoje w firmie. Dostępny 24/7 przez cały rok, system automatycznie zapisuje postępy. Personel może szkolić się z dowolnego miejsca, nawet w drodze do pracy."
+        ]
     },
     "ru": {
-        "teamTitle": "Обучайте команды эффективно и результативно",
-        "teamDescription": "В Irish Handling мы гордимся тем, что готовы помочь вам с различными потребностями в обучении по различным предметам. Наши курсы электронного обучения полностью онлайн, что позволяет вам удобно получить доступ к обучению, необходимому вам и вашей компании. в свободное время или в рабочее время, наши курсы доступны в любое время суток",
-        "bulkDiscount": ["Массовые скидки","Чем больше вы заказываете, тем больше скидка. Наши оптовые скидки распространяются на заказы, включающие сочетание курсов. Эти курсы не имеют ограничений по времени для завершения, что позволяет вам максимально использовать возможности обучения. -10% скидка при заказе более 10 курсов. Более крупные корпоративные заказы, превышающие 500 курсов, мы обрабатываем в индивидуальном порядке. Это предполагает создание индивидуального пакета, отвечающего вашим конкретным потребностям, включая следующие преимущества: Специальный вариант сброса курса менеджера по работе с клиентами, если сотрудник покидает вашу компанию. Индивидуальные отчеты и отслеживание прогресса в вашем личном пакете управления. Для более подробного обсуждения ваших требований к обучению и бюджета, свяжитесь с нашим дружным отделом продаж через WhatsApp по телефону +353894631967."],
-        "invoice": ["Могу ли я оплатить по счету?", "Да, вы можете! Выбрав оплату по счету, вы получите следующие преимущества: Сроки оплаты 30 дней для счетов, Возможность указать номер заказа компании при необходимости, Доступ к обучению до оплаты счета*. Для небольших количеств, требующих выставления счета, не стесняйтесь связаться напрямую, и мы с удовольствием поможем. *Сертификаты обучения будут предоставлены после оплаты счета."],
-        "urgent": ["Срочные требования к обучению? Нет проблем...", "Конечно! От нашей системы самообслуживания до мгновенной онлайн-сертификации, мы здесь, чтобы ускорить потребности в обучении вашей команды. Выявление пробелов в навыках в вашей организации означает, что каждая проходящая минута — это либо упущенная возможность, либо риск для качества. С нашей системой ваша команда может начать обучение буквально за несколько минут. Доставка обучения по соответствию занимает несколько часов, а не дней. Мы можем одновременно обучать большое количество пользователей без логистических проблем."],
-        "minim": ["Минимизация прерываний - обучение онлайн", "Традиционное обучение подразумевает приостановку работы всего персонала для сбора в одном месте. Мы выступаем за более эффективный подход... Онлайн-обучение освобождает вас от расходов и прерываний, вызванных сбором всех в одном месте в образовательных целях. Доступное круглосуточно, 365 дней в году, онлайн-обучение автоматически сохраняет ваш прогресс. Сотрудники могут обучаться из любого места, включая время в пути."]
+        "teamTitle": "Эффективные решения для обучения персонала",
+        "teamDescription": "В Ireland Safety Course мы специализируемся на предоставлении комплексного обучения, адаптированного под нужды вашей организации. Наши цифровые модули полностью доступны онлайн, что дает вашим сотрудникам гибкость в обучении в любое удобное время.",
+        "bulkDiscount": [
+            "Корпоративные скидки",
+            "Оптимизируйте свой бюджет с нашей системой прогрессивных скидок. Скидки применяются автоматически. Лицензии не имеют срока годности. Сэкономьте 10% при заказе от 10 лицензий. Для крупных заказов (более 500 курсов) мы предлагаем индивидуальные решения, персонального менеджера и детальную аналитику. Для обсуждения условий напишите нам в Онлайн-чат."
+        ],
+        "invoice": [
+            "Оплата по счету",
+            "Да, мы работаем с безналичным расчетом для юридических лиц. Преимущества: отсрочка платежа 30 дней, указание номера заказа (PO) и быстрый доступ к курсам*. Для небольших заказов со счетом просто свяжитесь с нами. *Официальные сертификаты выдаются после подтверждения оплаты."
+        ],
+        "urgent": [
+            "Срочное обучение?",
+            "Без проблем! Наш автоматизированный портал и мгновенная генерация сертификатов созданы для скорости. С нашей платформой ваша команда может начать обучение за считанные секунды. Обучение занимает часы, а не дни, что позволяет обучать сотни сотрудников одновременно без логистических сложностей."
+        ],
+        "minim": [
+            "Минимизация простоев: Обучайте онлайн",
+            "Традиционные семинары требуют остановки работы. Цифровое обучение устраняет транспортные расходы и операционные перерывы. Доступная 24/7/365, наша система сохраняет прогресс автоматически. Персонал может учиться из любого места, даже во время поездки."
+        ]
     },
     "ukr": {
-        "teamTitle": "Навчайте команди ефективно та результативно",
-        "teamDescription": "Ми в Irish Manual Handling пишаємося тим, що готові допомогти вам із різноманітними навчальними потребами з багатьох предметів. Наші курси електронного навчання повністю онлайн, що дозволяє вам зручно отримати доступ до навчання, необхідного вам і вашій компанії. у вільний час або в робочий час, наші курси доступні в будь-який час доби",
-        "bulkDiscount": ["Оптові знижки","Чим більше ви замовляєте, тим більша знижка. Наші оптові знижки застосовуються до замовлень, які містять поєднання курсів. Ці курси не мають обмежень за часом проходження, що дозволяє вам максимально використати можливості для навчання. -10% знижка на замовлення від 10+ курсів Для великих корпоративних замовлень, що перевищують 500 курсів, ми обробляємо їх на індивідуальній основі. Це передбачає створення індивідуального пакету для задоволення ваших конкретних потреб, включаючи наступні переваги: Спеціальний курс менеджера з роботи з обліковими записами Параметри скидання, якщо співробітник залишає вашу компанію Налаштовані звіти та відстеження прогресу у вашому особистому Management Suite Для більш детального обговорення ваших вимог до навчання та бюджету, зв’яжіться з нашою дружньою командою продажів через WhatsApp за номером +353894631967."],
-        "invoice": ["Чи можна оплатити за рахунок?", "Так, можна! Обравши оплату за рахунком, ви скористаєтеся наступними перевагами: Терміни оплати 30 днів для рахунків, Можливість вказати номер замовлення компанії за необхідності, Доступ до навчання до сплати рахунку*. Для невеликих кількостей, які потребують виставлення рахунку, не соромтеся звертатися безпосередньо, і ми з радістю вам допоможемо. *Сертифікати навчання будуть надані після сплати рахунку."],
-        "urgent": ["Термінові вимоги до навчання? Немає проблем...", "Звісно! Від нашої системи самообслуговування до миттєвої онлайн-сертифікації, ми тут, щоб прискорити потреби навчання вашої команди. Виявлення прогалин у навичках у вашій організації означає, що кожна мить, яка пройшла, — це або втрачена можливість, або ризик для якості. З нашою системою ваша команда може почати навчання буквально за кілька хвилин. Доставка навчання з відповідності займає години, а не дні. Ми можемо одночасно навчати велику кількість користувачів без логістичних проблем."],
-        "minim": ["Мінімізація перерв - навчання онлайн", "Традиційне навчання передбачає призупинення роботи всього персоналу для збору в одному місці. Ми виступаємо за більш ефективний підхід... Онлайн-навчання звільняє вас від витрат і перерв, спричинених збором всіх в одному місці в освітніх цілях. Доступне цілодобово, 365 днів на рік, онлайн-навчання автоматично зберігає ваш прогрес. Персонал може навчатися з будь-якого місця, включаючи час в дорозі."]
+        "teamTitle": "Ефективні рішення для навчання персоналу",
+        "teamDescription": "У Ireland Safety Course ми спеціалізуємося на наданні комплексного навчання, адаптованого до потреб вашої організації. Наші цифрові модулі на 100% доступні онлайн, що дає вашим співробітникам гнучкість у навчанні у зручний для них час.",
+        "bulkDiscount": [
+            "Корпоративні знижки",
+            "Оптимізуйте свій бюджет за допомогою нашої системи прогресивних знижок. Знижки застосовуються автоматично. Ліцензії не мають терміну дії. Заощаджуйте 10% при замовленні від 10 ліцензій. Для великих замовлень (понад 500 курсів) ми пропонуємо індивідуальні рішення, персонального менеджера та детальну аналітику. Для обговорення умов напишіть нам в Онлайн-чат."
+        ],
+        "invoice": [
+            "Оплата за рахунком",
+            "Так, ми працюємо з безготівковим розрахунком для юридичних осіб. Переваги: відстрочка платежу 30 днів, вказання номера замовлення (PO) та швидкий доступ до курсів*. Для невеликих замовлень з рахунком просто зв'яжіться з нами. *Офіційні сертифікати видаються після підтвердження оплати."
+        ],
+        "urgent": [
+            "Термінове навчання?",
+            "Без проблем! Наш автоматизований портал та миттєва генерація сертифікатів створені для швидкості. З нашою платформою ваша команда може почати навчання за лічені секунди. Навчання займає години, а не дні, що дозволяє навчати сотні співробітників одночасно без логістичних складнощів."
+        ],
+        "minim": [
+            "Мінімізація простоїв: Навчайте онлайн",
+            "Традиційні семінари вимагають зупинки роботи. Цифрове навчання усуває транспортні витрати та операційні перерви. Доступна 24/7/365, наша система зберігає прогрес автоматично. Персонал може вчитися з будь-якого місця, навіть під час поїздки."
+        ]
     }
 }

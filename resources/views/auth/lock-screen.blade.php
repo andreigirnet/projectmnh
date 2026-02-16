@@ -24,12 +24,12 @@
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
                                     <div class="auth-brand p-4">
-                                        <a href="" class="logo-light">
-                                            <img src="/images/logo.png" alt="logo" height="22">
-                                        </a>
-                                        <a href="" class="logo-dark">
-                                            <img src="/images/logo-dark.png" alt="dark logo" height="22">
-                                        </a>
+{{--                                        <a href="" class="logo-light">--}}
+{{--                                            <img src="/images/logo.png" alt="logo" height="22">--}}
+{{--                                        </a>--}}
+{{--                                        <a href="" class="logo-dark">--}}
+{{--                                            <img src="/images/logo-dark.png" alt="dark logo" height="22">--}}
+{{--                                        </a>--}}
                                     </div>
                                     <div class="p-4 my-auto">
                                         <div class="text-center w-75 m-auto">
