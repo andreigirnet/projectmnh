@@ -29,13 +29,13 @@
     </div>
     <div class="trainTeamsSection">
         <div class="trainTeamsWrapper">
-            <div class="teamTitle" style="text-align: center;">
-                <div class="modalTitle contact-button">
-                    <span>Click the WhatsApp icon ➤</span>
-                    <span><a href=""><img class="whatsapp-icon" src="{{asset('images/logo/whatsapp.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>
-                    <span>to switch to our live chat instantly.</span>
-                </div>
-            </div>
+{{--            <div class="teamTitle" style="text-align: center;">--}}
+{{--                <div class="modalTitle contact-button">--}}
+{{--                    <span>Click the WhatsApp icon ➤</span>--}}
+{{--                    <span><a href=""><img class="whatsapp-icon" src="{{asset('images/logo/whatsapp.png')}}" style="width: 35px; cursor: pointer" alt=""></a></span>--}}
+{{--                    <span>to switch to our live chat instantly.</span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="delimiter"></div> <!-- Linia de delimitare -->
             <div class="teamTitle" style="text-align: center;">
                 <div class="modalTitle contact-button">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="delimiter"></div> <!-- Linia de delimitare -->
-            <div class="teamDescription" > Our operating hours are from 10am to 7pm, Monday to Friday, and from 10am to 7pm on weekends and bank holidays. You can also reach us via email at info@Ireland-SafetyCourse.com or 0894631967. | 20 Foxborough Close, Balgaddy, Lucan, Co. Dublin, K78 AN24, Ireland </div>
+            <div class="teamDescription" > Our operating hours are from 10am to 7pm, Monday to Friday, and from 10am to 7pm on weekends and bank holidays. You can also reach us via email at info@manualhandlingireland.com. | 13 Kinahan StreetArbour HillStoneybatterDublin 7D07 E2N6Ireland </div>
         </div>
 
     </div>

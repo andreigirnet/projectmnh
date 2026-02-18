@@ -101,7 +101,11 @@
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script src="{{asset('js/hideAdminNav.js')}}"></script>
 
-
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+    </script>
 
 </body>
 

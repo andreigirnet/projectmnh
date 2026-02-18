@@ -71,10 +71,10 @@
                 <h3 style="margin-left: 50px">Ireland</h3>
                 <h3 style="margin-left: 40px">Ireland Safety Course</h3>
                 <pre>
-                    www.irelandsafetycourse.ie
-                    22 Grand Canal Dock
-                    Grand Canal Quay
-                    Dublin 2, D02 H210
+                    www.manualhandlingireland.com
+                    13 Kinahan StreetArbour HillStoneybatter
+                    Dublin 7D07
+                    E2N6
                     Ireland
                 </pre>
             </td>

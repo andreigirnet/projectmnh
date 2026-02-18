@@ -6,7 +6,7 @@
     {{-- Title --}}
     <title>{{ config('app.name', 'Laravel') }} - Online Safety Courses from €25</title>
     {{-- Meta description --}}
-    <meta name="description" content="Get certified for only €25! Fully online safety courses. ⭐️ 1 Hour Duration ⭐️ Digital Certificate ⭐️ Unlimited Exam Attempts. Recognized in Ireland & UK.">
+    <meta name="description" content="Get certified for only €25! Manual Handling Online Course Ireland. ⭐️ 1 Hour Duration ⭐️ Digital Certificate ⭐️ Unlimited Exam Attempts. Recognized in Ireland & UK.">
     <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
     {{-- Open Graph / Facebook --}}
     <link rel="canonical" href="{{ url()->current() }}">
@@ -80,5 +80,10 @@
 <script>
     AOS.init();
 </script>
+{{--<script>--}}
+{{--    document.addEventListener('contextmenu', function(e) {--}}
+{{--        e.preventDefault();--}}
+{{--    }, false);--}}
+{{--</script>--}}
 </body>
 </html>

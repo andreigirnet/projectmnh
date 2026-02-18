@@ -41,10 +41,11 @@
                         </div> <div class="col-6">
                             <h6 class="fs-14">Training Provider</h6>
                             <address>
-                                <b>Ireland Safety Course</b><br>
-                                22 Grand Canal Dock<br>
-                                Dublin 2, D02 H210<br>
-                                Email: info@irelandsafetycourse.ie
+
+                                <b>Manual Hanlding Ireland</b><br>
+                                13 Kinahan StreetArbour <br>
+                                HillStoneybatter Dublin<br>
+                                Email: info@manualhandlingireland.com
                             </address>
                         </div> </div>
                     <div class="row">
@@ -78,7 +79,7 @@
                             <div class="clearfix pt-3">
                                 <h6 class="text-muted fs-14">Notes:</h6>
                                 <small>
-                                    Thank you for choosing <b>Ireland Safety Course</b>.
+                                    Thank you for choosing <b>Manual Handling Ireland</b>.
                                     Digital certificates are issued instantly upon successful completion of the course.
                                     You have 3 years of free access to your course content and digital credentials.
                                 </small>

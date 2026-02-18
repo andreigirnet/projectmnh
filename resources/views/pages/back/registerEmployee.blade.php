@@ -10,7 +10,7 @@
                     <p>We have emailed your login details, allowing you to access our website and take the course at your convenience.
                         <br><br>
                         Please check your spam or junk mail folder, just in case. If you'd like to send the course to your employee, please click the link below.
-                        (<a href="https://irish-manualhandling.com/packages">https://irish-manualhandling.com/packages</a>).
+                        (<a href="https://manualhandlingireland.com/packages">https://manualhandlingireland.com/packages</a>).
                         <br><br>
                         To proceed, ensure you have purchased the course(s). If not, visit the homepage, make the necessary purchase, and then proceed to send it to your employees.
                     </p>

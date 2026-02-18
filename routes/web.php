@@ -188,13 +188,13 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.cookies')));
     $sitemap->add(Url::create(route('front.blog')));
 
-    // Products (dynamic)
-    Product::all()->each(function ($product) use ($sitemap) {
-        $sitemap->add(
-            Url::create(route('front.product', $product->slug))
-                ->setLastModificationDate($product->updated_at)
-        );
-    });
+//    // Products (dynamic)
+//    Product::all()->each(function ($product) use ($sitemap) {
+//        $sitemap->add(
+//            Url::create(route('front.product', $product->slug))
+//                ->setLastModificationDate($product->updated_at)
+//        );
+//    });
 
     // Blogs (dynamic)
     Blog::all()->each(function ($blog) use ($sitemap) {

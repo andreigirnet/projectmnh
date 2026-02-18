@@ -32,6 +32,6 @@
 </div>
 <div class="copyright">
     <p style="color: white; font-size: 18px">
-        Copyright © 2010-2026 Ireland-SafetyCourse.ie | Safety Ireland Course Ltd | Email: info@Ireland-SafetyCourse.ie
+        Copyright © 2010-2026 manualhandlingireland.com | manualhandlingireland Ltd | Email: info@manualhandlingireland.com
     </p>
 </div>

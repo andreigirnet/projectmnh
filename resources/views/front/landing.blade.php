@@ -38,67 +38,52 @@
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
     <div class="productSection">
-        <img src="{{asset('images/manualanimation.gif')}}" alt="Person lifting a box safely" class="gifImage">
-        <div class="productWrapper">
-            <div class="adminProducts">
-                @foreach($products as $product)
-                    @if($product->status == 0)
-                    <div class="adminProduct">
-                        <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImage">
-                        <div class="adminProductBottom">
-                            <div class="adminProductName">{{$product->name}}</div>
-                            @if (!in_array($product->id, [13, 14, 15, 16]))
-                                <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
-                            @endif
-                            <hr>
-                            <div class="product-info-icons">
-                                @if($product->id == 14)
-                                    <div class="product-icons">
-                                        <img src="images/icons/back-in-time.png" alt="">
-                                        <div>Duration: {{$product->durationTraining}} Day(Half day)</div>
-                                    </div>
-                                @else
-                                    <div class="product-icons">
-                                        <img src="images/icons/back-in-time.png" alt="">
-                                        <div>Duration: {{$product->durationTraining}} hours</div>
-                                    </div>
-                                @endif
-                                <div class="product-icons">
-                                    <img src="images/icons/certificate.png" alt="">
-                                    <div>Valid: {{$product->certificateValidity}} Years</div>
-                                </div>
-                                <div class="product-icons">
-                                    <img src="images/icons/money.png" alt="">
-                                    <div style="font-weight: bold"><del style="color: gray">{{round($product->price * 1.31)}} €</del> <span style="color: red; font-size: 20px">{{$product->price}} €</span></div>
-                                </div>
-                            </div>
-                            @if($product->status == 0)
-{{--                                <form action="{{route('basket.add')}}" method="POST">--}}
-{{--                                    @csrf--}}
-{{--                                    <input type="hidden" value="{{$product->id}}" name="productId">--}}
-                                    <div class="productButtons">
-                                        <a href="{{route('home')}}" class="buttonProductAdminAdd">Add To Basket</a>
-                                        @if($product->description)
-                                            <a href="{{route('front.product', $product->slug)}}" class="homeStartCourseButton">Info</a>
-                                        @endif
-                                    </div>
-{{--                                </form>--}}
-{{--                            @else--}}
-{{--                                <div class="productButtons">--}}
+{{--        code for manual handling card--}}
+        <div class="course-card">
 
-{{--                                    --}}{{--                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>--}}
+            <div class="course-image">
+                <!-- Replace with actual image -->
+             <img src="{{ asset('images/lifting.png') }}" alt="Manual Handling Course">
+            </div>
 
-{{--                                    @if($product->description)--}}
-{{--                                        <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>--}}
-{{--                                    @endif--}}
-{{--                                </div>--}}
-                            @endif
+            <div class="course-content">
+
+                <div class="price-wrapper">
+                    <span class="old-price">€35</span>
+                    <span class="new-price">€25</span>
+                    <span class="discount-badge">30% OFF</span>
+                </div>
+
+                <h1 class="course-title">Manual Handling Course</h1>
+
+                <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Validity</span>
+                            <span class="info-value">3 Years</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Duration</span>
+                            <span class="info-value">1 Hour</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Format</span>
+                            <span class="info-value">100% Online</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Certificate</span>
+                            <span class="info-value">Instant</span>
                         </div>
                     </div>
-                    @endif
-                @endforeach
+
+                <a href="/home" class="linkStyle"><button class="course-btn">Buy Now</button></a>
+                </div>
             </div>
+
         </div>
+
     </div>
 
     <div class="langTitle" data-aos="fade-up">
@@ -113,48 +98,59 @@
         </div>
     </div>
 
-    <div class="bulkContainer">
-        <div class="innerBulk">
-            <div class="bulkLeftSide">
-                <div class="bulkTitle" x-text="data.bulkSection[0]">Our online courses are designed for easy completion.</div>
-                <div class="bulkLine"></div>
-                <div class="bulkItems">
-                    <div class="bulkItem">
-                        <div class="bulkImg">
-                            <img src="{{asset('images/icons/11.png')}}" alt="image">
+    <section class="premium-bulk-wrapper">
+        <div class="premium-bulk-container">
+
+            <div class="premium-info-wing">
+                <header class="premium-info-header">
+                    <h2 class="premium-main-title" x-text="data.bulkSection[0]">
+                        Our digital modules are built for a smooth user experience.
+                    </h2>
+                    <div class="premium-divider"></div>
+                </header>
+
+                <div class="premium-step-list">
+                    <div class="premium-step-card">
+                        <div class="premium-icon-box">
+                            <img src="{{asset('images/icons/11.png')}}" alt="Purchase">
                         </div>
-                        <div class="bulkContent" x-text="data.bulkSection[1]"> Buy your course online.</div>
+                        <p class="premium-step-text" x-text="data.bulkSection[1]">Purchase your training license online.</p>
                     </div>
-                    <div class="bulkItem">
-                        <div class="bulkImg">
-                            <img src="{{asset('images/icons/22.png')}}" alt="image">
+
+                    <div class="premium-step-card">
+                        <div class="premium-icon-box">
+                            <img src="{{asset('images/icons/22.png')}}" alt="Activate">
                         </div>
-                        <div class="bulkContent" x-text="data.bulkSection[2]"> Get started by activating your course and beginning your training.</div>
+                        <p class="premium-step-text" x-text="data.bulkSection[2]">Activate your account and begin your modules immediately.</p>
                     </div>
-                    <div class="bulkItem">
-                        <div class="bulkImg">
-                            <img src="{{asset('images/icons/33.png')}}" alt="image">
+
+                    <div class="premium-step-card">
+                        <div class="premium-icon-box">
+                            <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
                         </div>
-                        <div class="bulkContent" x-text="data.bulkSection[3]"> Advance & Complete - Engage with the course, take the exam, and then download your certificate of completion.</div>
+                        <p class="premium-step-text" x-text="data.bulkSection[3]">Learn & Achieve - Progress through the course, pass the assessment, and instantly download your credentials.</p>
                     </div>
-                    <div class="bulkItem">
-                        <div class="bulkImg">
-                            <img src="{{asset('images/icons/44.png')}}" alt="image">
+
+                    <div class="premium-step-card">
+                        <div class="premium-icon-box">
+                            <img src="{{asset('images/icons/44.png')}}" alt="Support">
                         </div>
-                        <div class="bulkContent" x-text="data.bulkSection[4]"> For any help or guidance, just email us at info@Irish-ManualHandling.com.</div>
+                        <p class="premium-step-text" x-text="data.bulkSection[4]">For technical support, please contact us at info@irelandSafetyCourse.ie.</p>
                     </div>
                 </div>
             </div>
-            <div class="bulkRightSide">
-                <img src="{{asset('images/landingBulk.png')}}" alt="">
+
+            <div class="premium-visual-wing">
+                <img src="{{asset('images/landingBulk.png')}}" class="premium-promo-img" alt="Bulk Purchase Offer">
             </div>
+
         </div>
-    </div>
+    </section>
 
     <div class="trustContainer">
         <div class="innerTrust">
             <div class="trustLeft">
-                <img src="{{asset('images/trust.jpg')}}" alt="">
+                <img src="{{asset('images/trust.png')}}" alt="">
             </div>
             <div class="trustRight">
                 <div class="trustTitle" x-text="data.trustSection[0]">Training you can trust</div>
@@ -239,213 +235,239 @@
 
     <div id="customersReviews">
         <div id="customerReviewWrap">
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-1.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">John Weasley</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+
+            <div class="premium-review-card" data-aos="fade-up">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-1.png')}}" alt="John Weasley">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">John Weasley</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">24 minutes ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">24 minutes ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "The online Manual Handling training provided by Irish-ManualHandling was comprehensive yet easy to follow. The certification process was smooth, and the practical tips were immensely helpful."
+                    </div>
                 </div>
-                <div class="reviewText">
-                    The online Manual Handling training provided by Irish-ManualHandling was comprehensive yet easy to follow. The certification process was smooth, and the practical tips were immensely helpful.
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
 
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-2.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">Mary Andrews</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-2.png')}}" alt="Mary Andrews">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">Mary Andrews</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">2 hours ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">2 hours ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "I found the course from Irish Manual Handling to be informative and well-structured. The convenience of online learning coupled with their engaging content made the whole experience worthwhile."
+                    </div>
                 </div>
-                <div class="reviewText">
-                    I found the course from Irish Manual Handling to be informative and well-structured. The convenience of online learning coupled with their engaging content made the whole experience worthwhile.
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
 
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-3.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">Choe Lee</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-3.png')}}" alt="Choe Lee">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">Choe Lee</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">7 hours ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">7 hours ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "The Manual Handling training exceeded my expectations. The modules were clear and concise, and the quizzes helped reinforce key concepts. Highly recommended for anyone seeking certification!"
+                    </div>
                 </div>
-                <div class="reviewText">
-                    The Manual Handling training exceeded my expectations. The modules were clear and concise, and the quizzes helped reinforce key concepts. Highly recommended for anyone seeking certification!
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
 
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-4.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">Markus Low</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-4.png')}}" alt="Markus Low">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">Markus Low</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">10 hours ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">10 hours ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "I appreciated the flexibility of being able to complete the training at my own pace. The material was presented in a way that was easy to understand for our entire team."
+                    </div>
                 </div>
-                <div class="reviewText">
-                    I appreciated the flexibility of being able to complete the training at my own pace. Irish-ManualHandling's course was user-friendly and the material was presented in a way that was easy to understand.
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
 
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-5.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">Vaness Spills</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-5.png')}}" alt="Vanessa Spills">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">Vanessa Spills</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">15 hours ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">15 hours ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "Obtaining my Manual Handling certificate was a breeze. The course content was relevant and the assessments were fair. Very pleased with the overall experience."
+                    </div>
                 </div>
-                <div class="reviewText">
-                    Obtaining my Manual Handling certificate through Irish-ManualHandling was a breeze. The course content was relevant and the assessments were fair. Very pleased with the overall experience.
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
 
-            <div class="main-review">
-                <div class="infoReview">
-                    <div class="imgReview">
-                        <img src={{asset("images/avatars/av-6.png")}} alt="">
-                    </div>
-                    <div class="statsReview">
-                        <div class="reviewerNameBadge">
-                            <div class="reviewerName">Angela Jedrynska</div>
-                            <div class="reviewerBadge"><img src="{{asset("images/icons/check.png")}}" alt=""></div>
+            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="premium-review-top">
+                    <div class="premium-review-header">
+                        <div class="premium-avatar-container">
+                            <img src="{{asset('images/avatars/av-6.png')}}" alt="Angela Jedrynska">
                         </div>
-                        <div class="reviewerStarsTime">
-                            <div class="reviewerStars">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
-                                <img src="{{asset("images/icons/star.png")}}" alt="">
+                        <div class="premium-reviewer-identity">
+                            <div class="premium-name-row">
+                                <span class="premium-reviewer-name">Angela Jedrynska</span>
+                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>
                             </div>
-                            <div class="reviewerTime">1 day ago</div>
+                            <div class="premium-rating-line">
+                                <div class="premium-stars-group">
+                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">
+                                </div>
+                                <span class="premium-timestamp">1 day ago</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="premium-review-body">
+                        "The online platform made it convenient for me to access the training from anywhere. The practical demonstrations were beneficial and highly professional."
+                    </div>
                 </div>
-                <div class="reviewText">
-                    The online platform provided by Irish-ManualHandling made it convenient for me to access the training from anywhere. The practical demonstrations were beneficial, and I feel more confident in applying safe manual handling practices.
-                </div>
-                <div class="reviewGoogle">
-                    <div class="reviewerTime">Posted on</div>
-                    <img src="{{asset("images/logo/google.png")}}" alt="">
+                <div class="premium-review-footer">
+                    <span class="premium-posted-label">Verified Review</span>
+                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">
                 </div>
             </div>
+
         </div>
     </div>
 
 
-    <div class="title" data-aos="fade-up">
-        <div class="titleText sizeTextMobile" x-text="data.homeAboutUs[0]">About Us</div>
-        <div class="borderTitle"></div>
-    </div>
+{{--    <div class="title" data-aos="fade-up">--}}
+{{--        <div class="titleText sizeTextMobile" x-text="data.homeAboutUs[0]">About Us</div>--}}
+{{--        <div class="borderTitle"></div>--}}
+{{--    </div>--}}
 
-    <div class="aboutUs" data-aos="fade-up">
-        <div class="aboutWrapper">
-            <div>
-                <div x-text="data.homeAboutUs[1]">Welcome to Irish-ManualHandling.com, your premier destination for top-notch online Manual Handling training in Ireland. Our platform is designed to deliver accessible, high-quality safety courses to Irish workers, no matter their location. With a focus on effectiveness and convenience, our certified courses are accessible entirely online.</div>
-                <br>
-                <div x-text="data.homeAboutUs[2]">At Irish Manual Handling, we take immense pride in the integrity and excellence of our safety training services. We firmly believe that proper safety education can be the crucial difference between life and death. Our commitment to developing and delivering top-tier safety courses reflects this conviction.</div>
-                <br>
-                <p x-text="data.homeAboutUs[3]">Our certifications hold recognition across Ireland, the UK, and the EU, ensuring credibility and compliance. Our instructors, esteemed members of CMIOSH (Chartered Member of IOSH), are IOSH certified at NFQ Level 6. Renowned for reliability, quality, and convenience, our services stand as a testament to our dedication.</p>
-                <hr>
-                <p x-text="data.homeAboutUs[4]">For inquiries, student support, sales, or technical assistance, utilize our chat-based support system or contact us via email at info@irish-manualhandling.com. Elevate your safety training with us today!</p>
+    <section class="imh-about-section" data-aos="fade-up">
+        <div class="imh-container">
+            <div class="imh-header">
+                <span class="imh-subtitle">Excellence in Safety</span>
+                <h2 class="imh-title">Who We Are</h2>
+                <div class="imh-divider"></div>
+            </div>
+
+            <div class="imh-content-grid">
+                <div class="imh-main-text">
+                    <p class="imh-lead-para" x-text="data.homeAboutUs[1]">
+                        Welcome to Irish-ManualHandling.com, your premier destination for top-notch online Manual Handling training in Ireland...
+                    </p>
+                    <p class="imh-body-para" x-text="data.homeAboutUs[2]">
+                        At Irish Manual Handling, we take immense pride in the integrity and excellence of our safety training services...
+                    </p>
+
+                    <div class="imh-contact-box">
+                        <p x-text="data.homeAboutUs[4]">For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
+                        <a href="mailto:info@irish-manualhandling.com" class="imh-email-link">info@irish-manualhandling.com</a>
+                    </div>
+                </div>
+
+                <div class="imh-trust-card">
+                    <div class="imh-badge-item">
+                        <div class="imh-icon">🌍</div>
+                        <div>
+                            <strong>EU & UK Recognized</strong>
+                            <p>Fully compliant certifications across borders.</p>
+                        </div>
+                    </div>
+                    <div class="imh-badge-item">
+                        <div class="imh-icon">🎓</div>
+                        <div>
+                            <strong>CMIOSH Instructors</strong>
+                            <p>IOSH certified at NFQ Level 6 expertise.</p>
+                        </div>
+                    </div>
+                    <div class="imh-badge-item">
+                        <div class="imh-icon">🛡️</div>
+                        <div>
+                            <strong>100% Digital</strong>
+                            <p>Secure, efficient, and accessible anywhere.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="title">
         <div class="titleText sizeTextMobile" x-text="data.getCertificate[0]">Get your Certificate</div>
@@ -453,118 +475,128 @@
         <a href="{{route('register')}}"><div class="pulse-button" data-aos="fade-up">Pay / Register Here</div></a>
     </div>
 
-    <div class="benefitsSection">
-        <div class="benefitsWrapper">
-            <div class="benefitsLeft" data-aos="fade-up">
-                <div class="benefit">
-                    <div class="benefitLeft">
-                        <div class="benefitTitle" x-text="data.getCertificate[1]">STUDY AT A TIME THAT SUITS YOU</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[2]">You can complete your course online at a time and a place that fits in with your other commitments</div>
+    <section class="exclusive-benefits-area">
+        <div class="exclusive-benefits-grid">
+
+            <div class="exclusive-col" data-aos="fade-up">
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #e60b31;">
+                        <img src="{{asset('images/logo/home.svg')}}" alt="Home">
                     </div>
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #e60b31;">
-                            <img src="{{asset("images/logo/home.svg")}}" alt="">
-                        </div>
-                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[1]">LEARN ON YOUR OWN SCHEDULE</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[2]">Complete your training online at a time and location that fits your lifestyle.</p>
                 </div>
-                <div class="benefit">
-                    <div class="benefitLeft">
-                        <div class="benefitTitle" x-text="data.getCertificate[3]">SAVE TIME BY STUDYING ONLINE</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[4]">Cut out traveling time, waiting for an open-course to start, and delegates that work at different speeds</div>
+
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #c3d600;">
+                        <img src="{{asset('images/logo/clock.svg')}}" alt="Clock">
                     </div>
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #c3d600;">
-                            <img src="{{asset("images/logo/clock.svg")}}" alt="">
-                        </div>
-                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[3]">SAVE TIME WITH VIRTUAL LEARNING</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[4]">Avoid travel time and the wait for physical classes to begin.</p>
                 </div>
-                <div class="benefit">
-                    <div class="benefitLeft">
-                        <div class="benefitTitle" x-text="data.getCertificate[5]">SAVE MONEY BY STUDYING ONLINE</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[6]">Studying online cuts out the overheads associated with traditional classroom based training</div>
+
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #345cb3;">
+                        <img src="{{asset('images/logo/wallet.svg')}}" alt="Wallet">
                     </div>
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #345cb3;">
-                            <img src="{{asset("images/logo/wallet.svg")}}" alt="">
-                        </div>
-                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[5]">REDUCE COSTS BY STUDYING DIGITALLY</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[6]">Online education removes the overhead expenses of traditional classroom settings.</p>
                 </div>
             </div>
-            <div class="benefitsCenter" data-aos="fade-up">
-                <div class="benefitTop">
-                    <img src="{{asset("images/banners/laptop1.webp")}}" alt="">
+
+            <div class="exclusive-hero-center" data-aos="zoom-in">
+{{--                <img src="{{asset('images/banners/laptop1.webp')}}" class="exclusive-laptop-img" alt="Platform Preview">--}}
+                <img src="{{asset('images/indian.png')}}" class="indianimage" alt="">
+            </div>
+
+            <div class="exclusive-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #f49c12;">
+                        <img src="{{asset('images/logo/download.svg')}}" alt="Download">
+                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[7]">STUDY WHENEVER YOU WANT</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[8]">Finish your modules at your own pace, wherever you have an internet connection.</p>
                 </div>
-                <div class="benefitBottom">
-                    <img src="{{asset("images/banners/lap_bottom.png")}}" alt="">
+
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #356ce6;">
+                        <img src="{{asset('images/logo/internet.svg')}}" alt="Global">
+                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[9]">MAXIMIZE EFFICIENCY</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[10]">Skip the commute and work at the speed that is right for you.</p>
+                </div>
+
+                <div class="exclusive-card">
+                    <div class="exclusive-icon-box" style="border-color: #f91819;">
+                        <img src="{{asset('images/logo/high-quality.svg')}}" alt="Quality">
+                    </div>
+                    <h3 class="exclusive-title" x-text="data.getCertificate[11]">AFFORDABLE TRAINING</h3>
+                    <p class="exclusive-text" x-text="data.getCertificate[12]">Digital learning is a cost-effective alternative to in-person training.</p>
                 </div>
             </div>
-            <div class="benefitsRight" data-aos="fade-up">
-                <div class="benefit">
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #f49c12;">
-                            <img src="{{asset("images/logo/download.svg")}}" alt="">
-                        </div>
-                    </div>
-                    <div class="benefitLeftRight">
-                        <div class="benefitTitle" x-text="data.getCertificate[7]">STUDY AT A TIME THAT SUITS YOU</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[8]">You can complete your course online at a time and a place that fits in with your other commitments</div>
-                    </div>
-                </div>
-                <div class="benefit">
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #356ce6;">
-                            <img src="{{asset("images/logo/internet.svg")}}" alt="">
-                        </div>
-                    </div>
-                    <div class="benefitLeftRight">
-                        <div class="benefitTitle" x-text="data.getCertificate[9]">SAVE TIME BY STUDYING ONLINE</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[10]">Cut out traveling time, waiting for an open-course to start, and delegates that work at different speeds</div>
-                    </div>
-                </div>
-                <div class="benefit">
-                    <div class="benefitRight">
-                        <div class="benefitImg" style="border-color: #f91819;">
-                            <img src="{{asset("images/logo/high-quality.svg")}}" alt="">
-                        </div>
-                    </div>
-                    <div class="benefitLeftRight">
-                        <div class="benefitTitle" x-text="data.getCertificate[11]">SAVE MONEY BY STUDYING ONLINE</div>
-                        <div class="benefitDescription" x-text="data.getCertificate[12]">Studying online cuts out the overheads associated with traditional classroom based training</div>
-                    </div>
-                </div>
-            </div>
+
         </div>
-    </div>
+    </section>
 
     <div class="title spaceTop" data-aos="fade-up" >
         <div class="titleText sizeTextMobile" x-text="data.expert[0]">Expert Online Manual Handling Training | Irish-ManualHandling.com</div>
         <div class="borderTitle"></div>
     </div>
 
-    <div class="aboutUs" data-aos="fade-up">
-        <div class="aboutWrapper">
-            <div>
-                <p x-text="data.expert[1]">Discover top-notch Online Manual Handling Training at Irish-ManualHandling.com. Elevate workplace safety with our comprehensive courses. Contact us at info@irish-manualhandling.com.</p>
-                <br>
-                <p x-text="data.expert[2]">Are you looking to enhance workplace safety and compliance? Look no further than Irish-ManualHandling.com! Our premier platform offers unparalleled Online Manual Handling Training designed to equip your team with the skills and knowledge necessary to ensure a secure and efficient work environment.</p>
+    <section class="imh-expert-section" data-aos="fade-up">
+        <div class="imh-expert-container">
 
-                <p x-text="data.expert[3]">At Irish-ManualHandling.com, we understand the critical importance of proper manual handling techniques in preventing injuries and fostering a culture of safety within your organization. Our comprehensive online courses are crafted by industry experts, covering a wide array of topics, from risk assessment to practical demonstrations, tailored to meet your specific needs.</p>
-                <br>
-                <p x-text="data.expert[4]">Why Choose Irish-ManualHandling.com?</p>
+            <div class="imh-expert-main-grid">
+                <div class="imh-expert-narrative">
+                    <p x-text="data.expert[3]">At Irish-ManualHandling.com, we understand the critical importance...</p>
 
-                <p x-text="data.expert[5]">
-                    Curriculum: Our courses encompass the latest industry standards and best practices, ensuring your team is well-versed in safe manual handling procedures.
-                    Interactive Learning: Engaging modules with interactive elements make learning enjoyable and effective for all participants.
-                    Certification: Upon successful completion, receive accredited certification, showcasing compliance with safety regulations.
-                    Convenient Online Access: Accessible 24/7, our platform allows flexibility for your team to learn at their own pace and convenience.
-                    Contact Us Today!
-                </p>
-                <br>
-                <p x-text="data.expert[6]">Elevate your workplace safety standards with our Online Manual Handling Training. Drop us an email at info@irish-manualhandling.com to discuss your training needs. Join countless satisfied clients who have entrusted us to revolutionize their approach to manual handling safety.</p>
+                    <div class="imh-expert-cta-card">
+                        <h3 x-text="data.expert[6]">Elevate your workplace safety standards...</h3>
+                        <a href="mailto:info@irish-manualhandling.com" class="imh-expert-btn">Email Us Today</a>
+                    </div>
+                </div>
 
-                <p x-text="data.expert[7]">Ensure your team's safety and efficiency—choose Irish-ManualHandling.com for comprehensive Online Manual Handling Training today!</p>
+                <div class="imh-expert-features">
+                    <h4 class="imh-feature-heading" x-text="data.expert[4]">Why Choose Irish-ManualHandling.com?</h4>
+
+                    <div class="imh-feature-item">
+                        <span class="imh-feature-icon">📋</span>
+                        <div>
+                            <strong>Modern Curriculum</strong>
+                            <p>Latest industry standards and best practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="imh-feature-item">
+                        <span class="imh-feature-icon">💻</span>
+                        <div>
+                            <strong>Interactive Learning</strong>
+                            <p>Engaging modules that make safety training effective.</p>
+                        </div>
+                    </div>
+
+                    <div class="imh-feature-item">
+                        <span class="imh-feature-icon">🏅</span>
+                        <div>
+                            <strong>Accredited Certification</strong>
+                            <p>Showcase compliance with recognized safety regulations.</p>
+                        </div>
+                    </div>
+
+                    <div class="imh-feature-item">
+                        <span class="imh-feature-icon">🕒</span>
+                        <div>
+                            <strong>24/7 Access</strong>
+                            <p>Learn at your own pace, anytime, anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imh-expert-footer">
+                <p x-text="data.expert[7]">Ensure your team's safety and efficiency—choose Irish-ManualHandling.com today!</p>
             </div>
         </div>
-    </div>
+    </section>
     <script src="{{asset("js/counter.js")}}"></script>
 @endsection
