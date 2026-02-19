@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>http://127.0.0.1:8000</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/terms</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/products</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/team</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/contact</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/faq</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/consulting</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/verify/certificate</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/cookies</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/blogs</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/blog/xy</loc>
+        <lastmod>2026-02-19T19:41:03+00:00</lastmod>
+
+            </url>
+</urlset>
