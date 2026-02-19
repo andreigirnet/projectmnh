@@ -1,32 +1,34 @@
 <?php
 
-namespace App\Observers;
+namespace App\Console\Commands;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 use App\Models\Blog;
+use Illuminate\Console\Command;
 
-class BlogObserver
+class GenerateSitemap extends Command
 {
-    public function created(Blog $blog)
-    {
-        $this->generateSitemap();
-    }
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'app:generate-sitemap';
 
-    public function updated(Blog $blog)
-    {
-        $this->generateSitemap();
-    }
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Command description';
 
-    public function deleted(Blog $blog)
-    {
-        $this->generateSitemap();
-    }
-
-    private function generateSitemap()
+    /**
+     * Execute the console command.
+     */
+    public function handle()
     {
         $sitemap = Sitemap::create();
 
-        // Static pages
         $sitemap->add(Url::create(route('frontHome')));
         $sitemap->add(Url::create(route('terms')));
         $sitemap->add(Url::create(route('front.products')));
@@ -38,14 +40,16 @@ class BlogObserver
         $sitemap->add(Url::create(route('front.cookies')));
         $sitemap->add(Url::create(route('front.blog')));
 
-        // Blogs
         Blog::all()->each(function ($blog) use ($sitemap) {
             $sitemap->add(
                 Url::create(route('front.show.blog', $blog->slug))
                     ->setLastModificationDate($blog->updated_at)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
             );
         });
 
         $sitemap->writeToFile(public_path('sitemap.xml'));
+
+        $this->info('Sitemap generated successfully.');
     }
 }

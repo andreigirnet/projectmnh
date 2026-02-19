@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
           $schedule->command('clear:cache-cookies')->weekly();
           $schedule->command('reminder:send')->everyMinute();
+            $schedule->command('app:generate-sitemap')->daily();
     }
 
     /**
