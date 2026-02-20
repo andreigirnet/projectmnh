@@ -80,10 +80,10 @@
 <script>
     AOS.init();
 </script>
-{{--<script>--}}
-{{--    document.addEventListener('contextmenu', function(e) {--}}
-{{--        e.preventDefault();--}}
-{{--    }, false);--}}
-{{--</script>--}}
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false);
+</script>
 </body>
 </html>
