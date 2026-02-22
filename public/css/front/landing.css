@@ -1758,7 +1758,7 @@
         height: 300px;
     }
     .warehouse{
-        display: none;
+        width: fit-content;
     }
     .mainBannerRight{
         display: flex;
