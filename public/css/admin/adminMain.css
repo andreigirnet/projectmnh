@@ -21,6 +21,7 @@ a{
 }
 .homeManualProduct{
     padding: 50px 0;
+    display: block;
 }
 .mobileCartContainer{
     width: 60px;
@@ -430,6 +431,7 @@ a{
     font-size: 13px;
     display: flex;
 }
+
 @media screen and (max-width: 1200px) and (min-width: 768px){
    .side{
        display: none;
@@ -458,8 +460,16 @@ a{
     #hideText{
         display: none;
     }
+    .homeManualProduct{
+        display: none;
+    }
+
 }
 @media screen and (max-width: 767px) and (min-width: 250px){
+
+    .homeManualProduct{
+        display: none;
+    }
     .errorPhoto a{
         display: flex;
         align-items: center;

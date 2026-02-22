@@ -24,6 +24,79 @@
             <div class="adminButtonModal" style="display: flex; align-items: center; justify-content: center; margin-top: 20px" id="understoodButton">UNDERSTOOD</div>
         </div>
     @endif
+        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">
+        <div class="adminProductsBack">
+            @foreach($products as $product)
+                @if($product->status == 0)
+                    <div class="adminProductBack">
+                        <img src="{{ asset('images/lifting.png') }}" alt="Manual Handling Course">
+                        <div class="adminProductBottomBack">
+                            <div class="adminProductNameBack">{{$product->name}}</div>
+                            @if (!in_array($product->id, [13, 14, 15, 16]))
+                                <div style="color: #397b21; font-weight: bold" class="elearning">e-Learning Course</div>
+                            @endif
+                            <hr style="border: 1px solid gray; opacity: 0.8">
+                            <div class="product-info-icons">
+                                @if($product->id == 14)
+                                    <div class="product-icons-back">
+                                        <img src="images/icons/back-in-time.png" alt="">
+                                        <div>Duration: {{$product->durationTraining}} Day(Half day)</div>
+                                    </div>
+                                @else
+                                    <div class="product-icons-back">
+                                        <img src="images/icons/back-in-time.png" alt="">
+                                        <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Duration: <span style="font-weight: 500">{{$product->durationTraining}} hours</span></div>
+                                    </div>
+                                @endif
+                                <div class="product-icons-back">
+                                    <img src="images/icons/certificate.png" alt="">
+                                    <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Validity: <span style="font-weight: 500">{{$product->certificateValidity}} Years</span></div>
+                                </div>
+                                <div class="product-icons-back">
+                                    <img src="images/icons/money.png" alt="">
+                                    <div style="font-weight: bold"><del style="color: gray">{{round($product->price * 1.31)}} €</del> <span style="color: red; font-size: 20px">{{$product->price}} €</span></div>
+                                </div>
+                            </div>
+                            @if($product->status == 0)
+                                <form action="{{route('basket.add')}}" method="POST">
+                                    @csrf
+                                    <input type="hidden" value="{{$product->id}}" name="productId">
+                                    <div class="productButtonsBack">
+                                        @if($product->description)
+                                            <a href="{{route('front.product', $product->slug)}}" class="homeInfoCourseButton">Info</a>
+                                        @endif
+                                        <button type="submit" class="buttonProductAdminAddBack">Add To Basket</button>
+                                    </div>
+                                </form>
+                            @else
+                                <div class="productButtons">
+                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>
+                                    @if($product->description)
+                                        <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>
+                                    @endif
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+
+        <div class="homeActionButtons">
+            @if($userPackageId)
+                <a href="{{route('course.index', $userPackageId[0]->id)}}" class="homeStartCourseButton">Start Course</a>
+            @else
+                <form action="{{route('basket.add')}}" method="POST">
+                    @csrf
+                    <input type="hidden" value="1" name="productId">
+                    <button type="submit" class="homeStartCourseButton">Buy a course</button>
+                </form>
+            @endif
+            @if($certificateId)
+                <a href="{{route('certificate.download', $certificateId[0]->id)}}" class="homeDownloadButton">Downloand Certificate</a>
+            @endif
+        </div>
+
     <div class="adminHomePageTitle">EFFECTIVE AND ACCESIBLE</div>
     <div class="adminHomePageInformation">
         <b class="textColorTitle">{{env('APP_NAME')}}</b>
@@ -43,77 +116,7 @@
             <a class="homeDownloadButton" href="{{route('package.index')}}">Link</a>
         </div>
     @endif
-    <div class="homeActionButtons">
-        @if($userPackageId)
-            <a href="{{route('course.index', $userPackageId[0]->id)}}" class="homeStartCourseButton">Start Course</a>
-        @else
-            <form action="{{route('basket.add')}}" method="POST">
-                @csrf
-                <input type="hidden" value="1" name="productId">
-                <button type="submit" class="homeStartCourseButton">Buy a course</button>
-            </form>
-        @endif
-        @if($certificateId)
-            <a href="{{route('certificate.download', $certificateId[0]->id)}}" class="homeDownloadButton">Downloand Certificate</a>
-        @endif
-    </div>
-{{--        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">--}}
-{{--        <div class="adminProductsBack">--}}
-{{--            @foreach($products as $product)--}}
-{{--                @if($product->status == 0)--}}
-{{--                <div class="adminProductBack">--}}
-{{--                    <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImageBack">--}}
-{{--                    <div class="adminProductBottomBack">--}}
-{{--                        <div class="adminProductNameBack">{{$product->name}}</div>--}}
-{{--                        @if (!in_array($product->id, [13, 14, 15, 16]))--}}
-{{--                            <div style="color: #397b21; font-weight: bold" class="elearning">e-Learning Course</div>--}}
-{{--                        @endif--}}
-{{--                        <hr style="border: 1px solid gray; opacity: 0.8">--}}
-{{--                        <div class="product-info-icons">--}}
-{{--                            @if($product->id == 14)--}}
-{{--                                <div class="product-icons-back">--}}
-{{--                                    <img src="images/icons/back-in-time.png" alt="">--}}
-{{--                                    <div>Duration: {{$product->durationTraining}} Day(Half day)</div>--}}
-{{--                                </div>--}}
-{{--                            @else--}}
-{{--                                <div class="product-icons-back">--}}
-{{--                                    <img src="images/icons/back-in-time.png" alt="">--}}
-{{--                                    <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Duration: <span style="font-weight: 500">{{$product->durationTraining}} hours</span></div>--}}
-{{--                                </div>--}}
-{{--                            @endif--}}
-{{--                            <div class="product-icons-back">--}}
-{{--                                <img src="images/icons/certificate.png" alt="">--}}
-{{--                                <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Validity: <span style="font-weight: 500">{{$product->certificateValidity}} Years</span></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-icons-back">--}}
-{{--                                <img src="images/icons/money.png" alt="">--}}
-{{--                                <div style="font-weight: bold"><del style="color: gray">{{round($product->price * 1.31)}} €</del> <span style="color: red; font-size: 20px">{{$product->price}} €</span></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        @if($product->status == 0)--}}
-{{--                            <form action="{{route('basket.add')}}" method="POST">--}}
-{{--                                @csrf--}}
-{{--                                <input type="hidden" value="{{$product->id}}" name="productId">--}}
-{{--                                <div class="productButtonsBack">--}}
-{{--                                    @if($product->description)--}}
-{{--                                        <a href="{{route('front.product', $product->slug)}}" class="homeInfoCourseButton">Info</a>--}}
-{{--                                    @endif--}}
-{{--                                        <button type="submit" class="buttonProductAdminAddBack">Add To Basket</button>--}}
-{{--                                </div>--}}
-{{--                            </form>--}}
-{{--                        @else--}}
-{{--                            <div class="productButtons">--}}
-{{--                                --}}{{----}}{{--                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>--}}
-{{--                                @if($product->description)--}}
-{{--                                    <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>--}}
-{{--                                @endif--}}
-{{--                            </div>--}}
-{{--                        @endif--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                @endif--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
+
        <div class="homeManualProduct">
             <div class="course-card">
 

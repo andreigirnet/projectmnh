@@ -106,7 +106,7 @@
     width: 130px;
     height: 40px;
     border-radius: 7px;
-    background: #F1F5F9;
+    background: #a8cbef;
     color: var(--textTitle);
     font-weight: 600;
     display: flex;
@@ -121,7 +121,7 @@
     width: 130px;
     height: 41px;
     border-radius: 7px;
-    background: #F1F5F9;
+    background: #a8cbef;
     color: var(--textTitle);
     font-weight: 600;
     display: flex;
@@ -135,7 +135,7 @@
     width: 175px;
     height: 40px;
     border-radius: 7px;
-    background: #fce001;
+    background: #a8cbef;
     color: var(--textTitle);
     font-weight: 600;
     display: flex;

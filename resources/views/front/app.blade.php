@@ -80,10 +80,6 @@
 <script>
     AOS.init();
 </script>
-<script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    }, false);
-</script>
+<script src="{{asset('js/prevent.js')}}"></script>
 </body>
 </html>

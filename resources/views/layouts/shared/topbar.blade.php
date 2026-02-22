@@ -11,17 +11,17 @@
                         <img src="{{asset('images/login/registerLogin.jpg')}}" alt="logo">
                     </span>
                     <span class="logo-sm">
-                        <img src="{{asset('images/login/smallLogo.png')}}" style="width: 80px" alt="small logo">
+                        <img src="{{asset('images/logo/adminLogo.png')}}" style="width: 80px" alt="small logo">
                     </span>
                 </span>
 
                 <!-- Logo Dark -->
                 <span class="logo-dark" id="showNavPanel" style="display:flex;">
                     <span class="logo-lg" >
-                        <img src="images/login/registerLogin.jpg" alt="dark logo">
+                        <img src="{{asset('images/login/registerLogin.jpg')}}" alt="dark logo">
                     </span>
                     <span class="logo-sm">
-                        <img src="{{asset('images/login/smallLogo.png')}}"  style="width: 50px; height: 40px" alt="small logo">
+                        <img src="{{asset('images/logo/adminLogo.png')}}"  style="width: 50px; height: 40px" alt="small logo">
                     </span>
                 </span>
             </div>

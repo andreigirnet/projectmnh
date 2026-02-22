@@ -10,7 +10,7 @@
     width: 280px;
 }
 .adminProductsBack{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px;
     column-gap: 50px;
@@ -124,6 +124,9 @@
 
 
 @media screen and (max-width: 1200px) and (min-width: 768px){
+    .adminProductsBack{
+        display: grid;
+    }
     .side{
         display: none;
     }
@@ -160,6 +163,9 @@
     }
 }
 @media screen and (max-width: 767px) and (min-width: 250px){
+    .adminProductsBack{
+        display: grid;
+    }
     .errorPhoto a{
         display: flex;
         align-items: center;
