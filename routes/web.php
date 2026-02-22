@@ -187,7 +187,7 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.verify')));
     $sitemap->add(Url::create(route('front.cookies')));
     $sitemap->add(Url::create(route('front.blog')));
-
+    $sitemap->add(Url::create('https://www.manualhandling-ireland.com/product/manual-handling'));
 //    // Products (dynamic)
 //    Product::all()->each(function ($product) use ($sitemap) {
 //        $sitemap->add(

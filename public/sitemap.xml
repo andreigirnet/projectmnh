@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://localhost/manualhandlingireland.com</loc>
+        <loc>http://127.0.0.1:8000</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/terms</loc>
+        <loc>http://127.0.0.1:8000/terms</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/products</loc>
+        <loc>http://127.0.0.1:8000/products</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/team</loc>
+        <loc>http://127.0.0.1:8000/team</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/contact</loc>
+        <loc>http://127.0.0.1:8000/contact</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/faq</loc>
+        <loc>http://127.0.0.1:8000/faq</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/consulting</loc>
+        <loc>http://127.0.0.1:8000/consulting</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/verify/certificate</loc>
+        <loc>http://127.0.0.1:8000/verify/certificate</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/cookies</loc>
+        <loc>http://127.0.0.1:8000/cookies</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/blogs</loc>
+        <loc>http://127.0.0.1:8000/blogs</loc>
     
             </url>
     <url>
-        <loc>http://localhost/manualhandlingireland.com/blog/xy</loc>
+        <loc>https://www.manualhandling-ireland.com/product/manual-handling</loc>
+    
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/blog/xy</loc>
         <lastmod>2026-02-19T19:41:03+00:00</lastmod>
 
             </url>

@@ -80,7 +80,7 @@ class CheckoutController extends Controller
                     'currency' => 'eur',
                     'confirmation_method' => 'manual',
                     'confirm' => true,
-                    'statement_descriptor' => 'IrelandSafetyCourse',
+                    'statement_descriptor' => 'ManualHandlingIreland',
                     'customer'=> $customer->id,
                     'description' => 'Payment made by '. auth()->user()->email,
                     'return_url' => url('/payment/success')
