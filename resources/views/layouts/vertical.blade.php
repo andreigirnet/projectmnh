@@ -100,7 +100,7 @@
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script src="{{asset('js/hideAdminNav.js')}}"></script>
-{{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
+    <script src="{{asset('js/prevent.js')}}"></script>
 
 
 </body>
