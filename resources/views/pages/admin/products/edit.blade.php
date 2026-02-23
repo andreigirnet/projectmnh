@@ -24,17 +24,6 @@
                 </select>
                 <label class="formLabel" for="course_name">Status: Active Or Comming Soon</label>
                 <input type="checkbox" id="" name="status" value="1">
-                <!-- Place the first <script> tag in your HTML's <head> -->
-                <script src="https://cdn.tiny.cloud/1/913vjdcsi8rs0du9iqclay1dlmlwkad55hngv09qjo5ce2d8/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
-
-                <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
-                <script>
-                    tinymce.init({
-                        selector: 'textarea',
-                        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-                        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                    });
-                </script>
                 <textarea name="description">
                   {{$product->description}}
                 </textarea>
