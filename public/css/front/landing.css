@@ -1238,7 +1238,7 @@
     border-radius: 20px;
 }
 #customersReviews {
-    padding: 100px 20px;
+    /*padding: 100px 20px;*/
     background-color: #fdfdfe; /* Ultra light clean background */
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
