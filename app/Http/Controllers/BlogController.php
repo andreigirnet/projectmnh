@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Str;
 class BlogController extends Controller
 {
     /**
@@ -62,7 +62,7 @@ class BlogController extends Controller
 
         $blog = new Blog();
         $blog->title = $request->input('title');
-        $blog->slug = str_replace(' ', '-', $request->input('title'));
+        $blog->slug = Str::slug($request->input('title'));
         $blog->description = $request->input('description');
         $blog->content = $request->input('blogContent');
         $blog->image = $imageName;
