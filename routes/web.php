@@ -198,14 +198,21 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.verify')));
     $sitemap->add(Url::create(route('front.cookies')));
     $sitemap->add(Url::create(route('front.blog')));
+
+    // Manual Handling Pages
+    $sitemap->add(Url::create(route('front.manual.handling')));
+    $sitemap->add(Url::create(route('front.manual.training')));
+    $sitemap->add(Url::create(route('front.manual.online')));
+    $sitemap->add(Url::create(route('front.manual.dublin')));
+    $sitemap->add(Url::create(route('front.manual.certificate')));
+    $sitemap->add(Url::create(route('front.manual.refresher')));
+    $sitemap->add(Url::create(route('front.manual.qqi')));
+    $sitemap->add(Url::create(route('front.manual.ireland')));
+    $sitemap->add(Url::create(route('front.safe.lifting')));
+    $sitemap->add(Url::create(route('front.what.handling')));
+
+    // Example external product link
     $sitemap->add(Url::create('https://www.manualhandling-ireland.com/product/manual-handling'));
-//    // Products (dynamic)
-//    Product::all()->each(function ($product) use ($sitemap) {
-//        $sitemap->add(
-//            Url::create(route('front.product', $product->slug))
-//                ->setLastModificationDate($product->updated_at)
-//        );
-//    });
 
     // Blogs (dynamic)
     Blog::all()->each(function ($blog) use ($sitemap) {
