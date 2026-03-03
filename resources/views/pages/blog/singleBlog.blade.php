@@ -43,24 +43,74 @@
         <div class="secondaryBannerTeamLayer"></div>
         <div class="secondaryBannerTitle">Blog</div>
     </div>
-    <div class="blogContainer">
-        <div class="blogInnerSingle">
-            <div class="singleBlogTitleContainer">
-                <h1 class="singleBogTitle">{{$blog->title}}</h1>
-            </div>
-            <div class="imgSingleBlogContainer">
-                <img src="{{asset('images/blogImages/'. $blog->image)}}" alt="" class="singleBlogImage" >
-            </div>
-            <div class="singleBlogTitleContainer" style="margin-top: 10px">
-                <p class="singleBogTitle" style="font-size: 20px; font-weight: 600"><span>Created at: </span>{{$blog->created_at}}</p>
-            </div>
-            <div class="blogSingleContentContainer">
-                <div class="blogSingleContent">
-                    {!! $blog->content !!}
+<article class="post-article">
+    {{-- Header Section --}}
+    <header class="post-header">
+        <div class="post-header__container">
+            <nav class="post-breadcrumb">
+                <a href="{{ route('front.blog') }}">Blog</a> <span>/</span> <span>{{ $blog->category ?? 'Safety' }}</span>
+            </nav>
+            <h1 class="post-article__title">{{ $blog->title }}</h1>
+
+            <div class="post-meta">
+                <div class="post-meta__info">
+                    <span class="post-meta__label">Published on</span>
+                    <time class="post-meta__date">{{ $blog->created_at->format('M d, Y') }}</time>
+                </div>
+                <div class="post-meta__share">
                 </div>
             </div>
         </div>
+    </header>
+
+    {{-- Featured Image --}}
+    <div class="post-feature-image">
+        <div class="post-feature-image__wrapper">
+            <img src="{{asset('images/blogImages/'. $blog->image)}}" alt="{{ $blog->title }}" class="post-feature-image__img">
+        </div>
     </div>
+
+    {{-- Content Body --}}
+    <div class="post-body">
+        <div class="post-body__container">
+            <div class="post-content-entry">
+                {!! $blog->content !!}
+            </div>
+
+            <footer class="post-article__footer">
+                <div class="post-tags">
+                    <span class="tag-exclusive">#Safety</span>
+                    <span class="tag-exclusive">#Workplace</span>
+                </div>
+                <hr class="post-divider">
+                <a href="{{ route('front.blog') }}" class="back-to-blog">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to all stories
+                </a>
+            </footer>
+        </div>
+    </div>
+    <section class="topic-section">
+        <div class="topic-section__container">
+            <h3 class="topic-section__title">Related Training Topics</h3>
+            <div class="topic-section__grid">
+                <a href="/" class="topic-pill">Manual Handling Course</a>
+                <a href="{{route('front.manual.training')}}" class="topic-pill">Manual Handling Training</a>
+                <a href="{{route('front.manual.online')}}" class="topic-pill">Manual Handling Online</a>
+                <a href="{{route('front.manual.dublin')}}" class="topic-pill">Manual Handling Dublin</a>
+                <a href="{{route('front.manual.certificate')}}" class="topic-pill">Manual Handling Certificate</a>
+                <a href="{{route('front.manual.refresher')}}" class="topic-pill">Manual Handling Refresher</a>
+                <a href="{{route('front.manual.qqi')}}" class="topic-pill">Manual Handling QQI</a>
+                <a href="{{route('front.safe.lifting')}}" class="topic-pill">Safe Lifting Techniques</a>
+                <a href="{{route('front.what.handling')}}" class="topic-pill">What is Manual Handling?</a>
+                <a href="{{route('front.faq')}}" class="topic-pill">FAQ</a>
+                <a href="{{route('front.contact')}}" class="topic-pill">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</article>
 
 <script>
 window.replainSettings = { id: '9f43da79-85c0-4dd0-9467-72fe6bdf1bff' };

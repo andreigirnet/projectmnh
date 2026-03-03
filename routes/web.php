@@ -26,6 +26,17 @@ use Spatie\Sitemap\Tags\Url;
         return view("front.landing", compact('products'));
     })->name('frontHome');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
+
+    Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
+    Route::get('/manual-handling-training', function(){return view("front.manual-handling-training");})->name('front.manual.training');
+    Route::get('/manual-handling-online', function(){return view("front.manual-handling-online");})->name('front.manual.online');
+    Route::get('/manual-handling-dublin', function(){return view("front.manual-handling-dublin");})->name('front.manual.dublin');
+    Route::get('/manual-handling-certificate', function(){return view("front.manual-handling-certificate");})->name('front.manual.certificate');
+    Route::get('/manual-handling-refresher', function(){return view("front.manual-handling-refresher");})->name('front.manual.refresher');
+    Route::get('/manual-handling-qqi', function(){return view("front.manual-handling-qqi");})->name('front.manual.qqi');
+    Route::get('/manual-handling-ireland', function(){return view("front.manual-handling-ireland");})->name('front.manual.ireland');
+    Route::get('/safe-lifting-techniques', function(){return view("front.safe-lifting-techniques");})->name('front.safe.lifting');
+    Route::get('/what-is-manual-handling', function(){return view("front.what-manual-handling");})->name('front.what.handling');
     Route::get('/products', function(){return view("front.products");})->name('front.products');
     Route::get('/team', function(){return view("front.teamTraining");})->name('front.team');
     Route::get('/contact', function(){return view("front.contact");})->name('front.contact');

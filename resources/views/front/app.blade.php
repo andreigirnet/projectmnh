@@ -27,6 +27,16 @@
     {{-- Css --}}
     <link rel = "icon" href ="{{asset('images/logo/flavicons.ico')}}" type = "image/x-icon">
     <link rel="stylesheet" href="{{asset("css/main.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-handling.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-online.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-training.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-dublin.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-certificate-page.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-refresher.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/qqi.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/manual-handling-ireland.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/safe-lifting.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/what-is-manual-handling.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/registerInclude.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/footer.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/brandSwiper.css")}}">
@@ -80,6 +90,6 @@
 <script>
     AOS.init();
 </script>
-<script src="{{asset('js/prevent.js')}}"></script>
+{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
 </body>
 </html>

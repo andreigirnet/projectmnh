@@ -1,30 +1,40 @@
 @extends('front.app')
 @section('content')
-    <div class="secondaryBannerContact">
-        <div class="secondaryBannerTeamLayer"></div>
-        <div class="secondaryBannerTitle">Blog</div>
+    <div class="hero-header">
+        <div class="hero-header__overlay"></div>
+        <h1 class="hero-header__title">Insights & Stories</h1>
     </div>
 
-    <div class="blogContainer">
-        <div class="blogInner">
+    <div class="blog-wrapper">
+        <div class="blog-grid">
             @foreach($blogs as $blog)
-                <a href="{{route('front.show.blog', $blog->slug)}}" class="card" style="color: black">
-                     <div class="card__header">
-                        <img src="{{asset('images/blogImages/'. $blog->image)}}" alt="" class="imgBlog" style="width: 600px">
-                     </div>
-                     <div class="card__body">
-                       <span class="tag tag-blue">Safety</span>
-                       <h4>{{$blog->title}}</h4>
-                       <p>{{$blog->description}}</p>
-                     </div>
-                     <div class="card__footer">
-                        <span style="color: black">Read more...</span>
-                    </div>
-                </a>
+                <article class="blog-card">
+                    <a href="{{route('front.show.blog', $blog->slug)}}" class="blog-card__link">
+                        <div class="blog-card__image-wrapper">
+                            <img src="{{asset('images/blogImages/'. $blog->image)}}" alt="{{$blog->title}}" class="blog-card__img">
+                            <div class="blog-card__badge">Safety</div>
+                        </div>
+
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">{{$blog->title}}</h3>
+                            <p class="blog-card__excerpt">
+                                {{ Str::limit($blog->description, 120) }}
+                            </p>
+
+                            <div class="blog-card__footer">
+                                <span class="blog-card__cta">Read Article</span>
+                                <svg class="blog-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             @endforeach
         </div>
     </div>
-    <div style="margin-top: 70px">
-    {{ $blogs->links('paginator') }}
+
+    <div class="blog-pagination">
+        {{ $blogs->links('paginator') }}
     </div>
 @endsection

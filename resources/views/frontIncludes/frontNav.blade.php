@@ -14,19 +14,19 @@
         </div>
 
         <div class="nav-utils">
-            <div class="language-picker">
-                <template x-if="currentLanguage">
-                    <img :src="'{{asset('images/flags/')}}/' + currentLanguage + '.png'" class="flag-icon">
-                </template>
-                <select x-model="currentLanguage" @change="chooseLanguage(currentLanguage)">
-                    <option value="en">English</option>
-                    <option value="ro">Romanian</option>
-                    <option value="ru">Russian</option>
-                    <option value="pl">Polish</option>
-                    <option value="ukr">Ukrainian</option>
-                    <option value="sp">Spanish</option>
-                </select>
-            </div>
+{{--            <div class="language-picker">--}}
+{{--                <template x-if="currentLanguage">--}}
+{{--                    <img :src="'{{asset('images/flags/')}}/' + currentLanguage + '.png'" class="flag-icon">--}}
+{{--                </template>--}}
+{{--                <select x-model="currentLanguage" @change="chooseLanguage(currentLanguage)">--}}
+{{--                    <option value="en">English</option>--}}
+{{--                    <option value="ro">Romanian</option>--}}
+{{--                    <option value="ru">Russian</option>--}}
+{{--                    <option value="pl">Polish</option>--}}
+{{--                    <option value="ukr">Ukrainian</option>--}}
+{{--                    <option value="sp">Spanish</option>--}}
+{{--                </select>--}}
+{{--            </div>--}}
 
             <a href="{{route('login')}}" class="cta-login" x-text="data.login"></a>
         </div>
