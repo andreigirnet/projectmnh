@@ -125,7 +125,7 @@
 .fq-page-title {
     font-size: 36px;
     font-weight: 800;
-    margin: 0;
+    margin-top: 30px;
 }
 
 .fq-title-underline {
@@ -259,7 +259,7 @@
     .faqBox{
         width: 300px;
     }
-    .fq-page-title { font-size: 26px; }
+    .fq-page-title { font-size: 26px;     margin-top: 0}
     .fq-category-card { border-radius: 8px; }
     .fq-hero-banner { padding: 40px 15px; }
 }

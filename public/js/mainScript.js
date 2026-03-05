@@ -44,7 +44,7 @@ function app() {
         },
 
         init() {
-            this.fetchData();
+            // this.fetchData();
         }
     }
 }

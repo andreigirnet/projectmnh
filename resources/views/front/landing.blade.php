@@ -8,9 +8,11 @@
         <div class="opacityLayer"></div>
         <div class="mainBannerContent">
             <div class="mainBannerRight">
-                <h1 class="mainBannerTitle" x-html="data.videoTitle">Convenient & Effective,<br> Ensuring Your Safe Return to Work</h1>
-                <div class="mainBannerDescription" x-text="data.videoContent">Providing best Online Manual Handling Training Course that delivers top-quality safety instruction, certification management, and consultative services, simplifying the task of ensuring every worker returns home safely.</div>
-                <a href="{{route('register')}}"><div class="videoButton" x-text="data.registerButton">Pay / Register Here</div></a>
+                <h1 class="mainBannerTitle">Manual Handling Course Ireland-<br> Online Training & Certificate</h1>
+                <div class="mainBannerDescription" >Our manual handling course is fully flexible and combines theory modules with a practical assessment. The training includes clear videos, helpful images, and straightforward text, making the content simple to follow and understand. It runs smoothly on mobile devices and PCs, allowing you to learn anytime and anywhere while meeting workplace safety standards in Ireland, the UK, and across Europe.</div>
+                <a href="{{route('register')}}" class="modern-glow-btn">
+                    Register For Manual Handling Certification
+                </a>
             </div>
         </div>
     </div>
@@ -19,21 +21,21 @@
         <div id="counterWrap">
             <div class="counterContent">
                 <div class="counterNumbers" id="customersCounter"></div>
-                <div class="counterDescription" x-text="data.counterLanding[0]">CUSTOMERS</div>
+                <div class="counterDescription" >CUSTOMERS</div>
             </div>
             <div class="counterContent">
                 <div class="counterNumbers" id="certificatesCounter"></div>
-                <div class="counterDescription" x-text="data.counterLanding[1]">CERTIFICATE'S ISSUED</div>
+                <div class="counterDescription" >CERTIFICATE'S ISSUED</div>
             </div>
             <div class="counterNumbers" class="counterContent">
                 <div id="instructorsCounter"></div>
-                <div class="counterDescription" x-text="data.counterLanding[2]">QUALIFIED INSTRUCTORS</div>
+                <div class="counterDescription" >QUALIFIED INSTRUCTORS</div>
             </div>
         </div>
     </div>
 
     <div class="title" data-aos="fade-up">
-        <div class="titleText" x-text="data.landingProduct[0]">Awarded for Exceptional Performance in Online Learning in Ireland, UK and Europe</div>
+        <div class="titleText" >Manual Handling Ireland Online Manual Handling Training for learners worldwide</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
@@ -87,7 +89,7 @@
     </div>
 
     <div class="langTitle" data-aos="fade-up">
-        <div class="languageText"  x-text="data.landingProduct[5]">When you start the course, you'll have the opportunity to choose from that 6 languages:</div>
+        <div class="languageText"  >At Manual Handling Ireland, our QQI accredited Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training meets HSA and HSE requirements, complies with EU legislation, and provides a recognised Manual Handling Certificate accepted across Ireland, including Dublin, as well as the UK and Europe. We also provide Manual Handling Refresher courses for individuals who need to renew or update their knowledge.</div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
             <img src="{{asset('images/flags/pl.png')}}" alt="">
@@ -103,8 +105,8 @@
 
             <div class="premium-info-wing">
                 <header class="premium-info-header">
-                    <h2 class="premium-main-title" x-text="data.bulkSection[0]">
-                        Our digital modules are built for a smooth user experience.
+                    <h2 class="premium-main-title" >
+                        How Our Manual Handling Course Works: In 4 Easy Steps
                     </h2>
                     <div class="premium-divider"></div>
                 </header>
@@ -114,28 +116,28 @@
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/11.png')}}" alt="Purchase">
                         </div>
-                        <p class="premium-step-text" x-text="data.bulkSection[1]">Purchase your training license online.</p>
+                        <p class="premium-step-text" >Purchase your training license online.</p>
                     </div>
 
                     <div class="premium-step-card">
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/22.png')}}" alt="Activate">
                         </div>
-                        <p class="premium-step-text" x-text="data.bulkSection[2]">Activate your account and begin your modules immediately.</p>
+                        <p class="premium-step-text" >Activate your account and begin your Manual Handling modules immediately.</p>
                     </div>
 
                     <div class="premium-step-card">
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
                         </div>
-                        <p class="premium-step-text" x-text="data.bulkSection[3]">Learn & Achieve - Progress through the course, pass the assessment, and instantly download your credentials.</p>
+                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and instantly download your Manual Handling Certificate.</p>
                     </div>
 
                     <div class="premium-step-card">
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/44.png')}}" alt="Support">
                         </div>
-                        <p class="premium-step-text" x-text="data.bulkSection[4]">For technical support, please contact us at info@irelandSafetyCourse.ie.</p>
+                        <p class="premium-step-text" >For technical support, please contact us at info@manualhandling-ireland.com</p>
                     </div>
                 </div>
             </div>
@@ -153,12 +155,11 @@
                 <img src="{{asset('images/trust.png')}}" alt="">
             </div>
             <div class="trustRight">
-                <div class="trustTitle" x-text="data.trustSection[0]">Training you can trust</div>
+                <div class="trustTitle" >QQI Acredited Manual Handling Training Dublin Ireland - You Can Trust</div>
                 <div class="trustContent">
-                    <div x-text="data.trustSection[1]">All of our courses comply with Continuing Professional Development standards and are accredited by the CPD Certification Service.
-                        We go above and beyond by ensuring that our courses receive independent approval from reputable authorities such as RoSPA, IATP, IIRSM, and the Institute of Hospitality.</div>
+                    <div >Manual Handling Ireland is a legally registered Irish company, fully compliant with national regulations. All our Manual Handling Training follows HSA standards, holds QQI accreditation, and aligns with European legislation.</div>
                     <br><br>
-                    <div x-text="data.trustSection[2]">The Manual Handling course is endorsed by Skills for Care, the foremost organization in workforce development for social care across Ireland, the UK, and all European countries. This respected accreditation is exclusive to top-quality learning and development providers in the social care sector.</div>
+                    <div >Our Manual Handling Courses are independently recognised by leading professional organisations, providing recognised, high-quality training trusted by employers across Ireland, the UK, and Europe. Choose your Manual Handling Certificate with complete confidence.</div>
                 </div>
             </div>
         </div>
@@ -167,7 +168,7 @@
     <div class="cpdContainer">
         <div class="cpdInner">
             <div class="paddingCpd">
-                <h2 class="cpdTitle" x-text="data.certificateSection[0]">Complete this CPD and ROSPA Accredited Course to obtain your Official Certificate!</h2>
+                <h2 class="cpdTitle" >Get Your Manual Handling Certificate Online Today - Instant Downloand</h2>
                 <div class="cpdFlex">
                     <div class="cpdLeft">
                         <div class="cpdItems">
@@ -176,8 +177,8 @@
                                     <img src="{{asset('images/icons/1.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  x-text="data.certificateSection[1]">Complete this CPD and ROSPA </div>
-                                    <div class="cpdItemContent"  x-text="data.certificateSection[2]">Accredited Course to obtain your Official Certificate!</div>
+                                    <div class="cpdItemTitle"  >QQI, HSA, Rospa Approved</div>
+                                    <div class="cpdItemContent"  >Accredited Course to obtain your Official Manual Handling Certificate!</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -185,8 +186,8 @@
                                     <img src="{{asset('images/icons/2.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  x-text="data.certificateSection[3]">Certify Your Skills</div>
-                                    <div class="cpdItemContent"  x-text="data.certificateSection[4]">An Irish Manual Handling Diploma/Certificate, accredited by CPD and ROSPA, validates the skills you have acquired.</div>
+                                    <div class="cpdItemTitle"  >Certify Your Skills</div>
+                                    <div class="cpdItemContent"  >An Irish Manual Handling Diploma/Certificate, accredited by CPD and ROSPA, validates the skills you have acquired.</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -194,8 +195,8 @@
                                     <img src="{{asset('images/icons/3.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  x-text="data.certificateSection[5]">Stand Out From the Crowd</div>
-                                    <div class="cpdItemContent"  x-text="data.certificateSection[6]">Include your Irish Manual Handling Certification on your resume to outshine competitors.</div>
+                                    <div class="cpdItemTitle"  >Stand Out From the Crowd</div>
+                                    <div class="cpdItemContent"  >Include your Manual Handling Ireland Certification on your resume to outshine competitors.</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -203,8 +204,8 @@
                                     <img src="{{asset('images/icons/4.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  x-text="data.certificateSection[7]">Advance in Your Career</div>
-                                    <div class="cpdItemContent"  x-text="data.certificateSection[8]">Showcase your Irish Manual Handling Certification to prospective employers, highlighting your skills and capabilities.</div>
+                                    <div class="cpdItemTitle"  >Advance in Your Career</div>
+                                    <div class="cpdItemContent"  >Showcase your Manual Handling Ireland Certification to prospective employers, highlighting your skills and capabilities.</div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +219,7 @@
     </div>
 
     <div class="title" data-aos="fade-up" style="margin-bottom: 25px;">
-        <div class="titleText sizeTextMobile" x-text="data.reviewTitle">What Our Customers Say</div>
+        <div class="titleText sizeTextMobile" >Manual Handling Course Reviews - What Our Learners Say</div>
         <div class="borderTitle"></div>
     </div>
 
@@ -415,7 +416,7 @@
 
 
 {{--    <div class="title" data-aos="fade-up">--}}
-{{--        <div class="titleText sizeTextMobile" x-text="data.homeAboutUs[0]">About Us</div>--}}
+{{--        <div class="titleText sizeTextMobile" >About Us</div>--}}
 {{--        <div class="borderTitle"></div>--}}
 {{--    </div>--}}
 
@@ -423,22 +424,22 @@
         <div class="imh-container">
             <div class="imh-header">
                 <span class="imh-subtitle">Excellence in Safety</span>
-                <h2 class="imh-title">Who We Are</h2>
+                <h2 class="imh-title">What is Manual Handling Ireland?</h2>
                 <div class="imh-divider"></div>
             </div>
 
             <div class="imh-content-grid">
                 <div class="imh-main-text">
-                    <p class="imh-lead-para" x-text="data.homeAboutUs[1]">
-                        Welcome to Irish-ManualHandling.com, your premier destination for top-notch online Manual Handling training in Ireland...
+                    <p class="imh-lead-para" >
+                        Welcome to manualhandling-ireland.com, your premier destination for top-notch online Manual Handling training in Ireland...
                     </p>
-                    <p class="imh-body-para" x-text="data.homeAboutUs[2]">
-                        At Irish Manual Handling, we take immense pride in the integrity and excellence of our safety training services...
+                    <p class="imh-body-para" >
+                        At Manual Handling Ireland, we take immense pride in the integrity and excellence of our safety training services...
                     </p>
 
                     <div class="imh-contact-box">
-                        <p x-text="data.homeAboutUs[4]">For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
-                        <a href="mailto:info@irish-manualhandling.com" class="imh-email-link">info@irish-manualhandling.com</a>
+                        <p >For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
+                        <a href="mailto:info@manualhandling-ireland.com" class="imh-email-link">info@manualhandling-ireland.com</a>
                     </div>
                 </div>
 
@@ -470,7 +471,7 @@
     </section>
 
     <div class="title">
-        <div class="titleText sizeTextMobile" x-text="data.getCertificate[0]">Get your Certificate</div>
+        <div class="titleText sizeTextMobile" >Get your Certificate</div>
         <div class="borderTitle"></div>
         <a href="{{route('register')}}"><div class="pulse-button" data-aos="fade-up">Pay / Register Here</div></a>
     </div>
@@ -483,30 +484,35 @@
                     <div class="exclusive-icon-box" style="border-color: #e60b31;">
                         <img src="{{asset('images/logo/home.svg')}}" alt="Home">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[1]">LEARN ON YOUR OWN SCHEDULE</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[2]">Complete your training online at a time and location that fits your lifestyle.</p>
+                    <h3 class="exclusive-title">LEARN ON YOUR OWN SCHEDULE</h3>
+                    <p class="exclusive-text">
+                        Complete your <strong>Manual Handling Course in Ireland</strong> online at a time and place that suits your lifestyle while working toward your <strong>Manual Handling Certification</strong>.
+                    </p>
                 </div>
 
                 <div class="exclusive-card">
                     <div class="exclusive-icon-box" style="border-color: #c3d600;">
                         <img src="{{asset('images/logo/clock.svg')}}" alt="Clock">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[3]">SAVE TIME WITH VIRTUAL LEARNING</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[4]">Avoid travel time and the wait for physical classes to begin.</p>
+                    <h3 class="exclusive-title">SAVE TIME WITH VIRTUAL LEARNING</h3>
+                    <p class="exclusive-text">
+                        Take your <strong>Manual Handling Course</strong> online and avoid travel time or waiting for classroom training sessions to begin.
+                    </p>
                 </div>
 
                 <div class="exclusive-card">
                     <div class="exclusive-icon-box" style="border-color: #345cb3;">
                         <img src="{{asset('images/logo/wallet.svg')}}" alt="Wallet">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[5]">REDUCE COSTS BY STUDYING DIGITALLY</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[6]">Online education removes the overhead expenses of traditional classroom settings.</p>
+                    <h3 class="exclusive-title">REDUCE COSTS BY STUDYING DIGITALLY</h3>
+                    <p class="exclusive-text">
+                        Our online <strong>Manual Handling Ireland training</strong> provides an affordable way to achieve your recognised <strong>Manual Handling Certification</strong>.
+                    </p>
                 </div>
             </div>
 
             <div class="exclusive-hero-center" data-aos="zoom-in">
-{{--                <img src="{{asset('images/banners/laptop1.webp')}}" class="exclusive-laptop-img" alt="Platform Preview">--}}
-                <img src="{{asset('images/indian.png')}}" class="indianimage" alt="">
+                <img src="{{asset('images/indian.png')}}" class="indianimage" alt="Manual Handling Course Ireland">
             </div>
 
             <div class="exclusive-col" data-aos="fade-up" data-aos-delay="100">
@@ -514,24 +520,30 @@
                     <div class="exclusive-icon-box" style="border-color: #f49c12;">
                         <img src="{{asset('images/logo/download.svg')}}" alt="Download">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[7]">STUDY WHENEVER YOU WANT</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[8]">Finish your modules at your own pace, wherever you have an internet connection.</p>
+                    <h3 class="exclusive-title">STUDY WHENEVER YOU WANT</h3>
+                    <p class="exclusive-text">
+                        Progress through your <strong>Manual Handling Course</strong> at your own pace and complete your <strong>Manual Handling Certification</strong> from anywhere with internet access.
+                    </p>
                 </div>
 
                 <div class="exclusive-card">
                     <div class="exclusive-icon-box" style="border-color: #356ce6;">
                         <img src="{{asset('images/logo/internet.svg')}}" alt="Global">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[9]">MAXIMIZE EFFICIENCY</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[10]">Skip the commute and work at the speed that is right for you.</p>
+                    <h3 class="exclusive-title">MAXIMIZE EFFICIENCY</h3>
+                    <p class="exclusive-text">
+                        Our <strong>Manual Handling Ireland training</strong> allows you to skip commuting and focus on learning quickly and efficiently.
+                    </p>
                 </div>
 
                 <div class="exclusive-card">
                     <div class="exclusive-icon-box" style="border-color: #f91819;">
                         <img src="{{asset('images/logo/high-quality.svg')}}" alt="Quality">
                     </div>
-                    <h3 class="exclusive-title" x-text="data.getCertificate[11]">AFFORDABLE TRAINING</h3>
-                    <p class="exclusive-text" x-text="data.getCertificate[12]">Digital learning is a cost-effective alternative to in-person training.</p>
+                    <h3 class="exclusive-title">AFFORDABLE TRAINING</h3>
+                    <p class="exclusive-text">
+                        This online <strong>Manual Handling Course in Ireland</strong> offers a cost-effective way to gain a recognised <strong>Manual Handling Certification</strong>.
+                    </p>
                 </div>
             </div>
 
@@ -539,7 +551,7 @@
     </section>
 
     <div class="title spaceTop" data-aos="fade-up" >
-        <div class="titleText sizeTextMobile" x-text="data.expert[0]">Expert Online Manual Handling Training | Irish-ManualHandling.com</div>
+        <div class="titleText sizeTextMobile" >Expert Online Manual Handling Training | manualhandling-ireland.com</div>
         <div class="borderTitle"></div>
     </div>
 
@@ -548,16 +560,16 @@
 
             <div class="imh-expert-main-grid">
                 <div class="imh-expert-narrative">
-                    <p x-text="data.expert[3]">At Irish-ManualHandling.com, we understand the critical importance...</p>
+                    <p >At manualhandling-ireland.com, we understand the critical importance...</p>
 
                     <div class="imh-expert-cta-card">
-                        <h3 x-text="data.expert[6]">Elevate your workplace safety standards...</h3>
-                        <a href="mailto:info@irish-manualhandling.com" class="imh-expert-btn">Email Us Today</a>
+                        <h3 >Elevate your workplace safety standards...</h3>
+                        <a href="mailto:info@manualhandling-ireland.com" class="imh-expert-btn">Email Us Today</a>
                     </div>
                 </div>
 
                 <div class="imh-expert-features">
-                    <h4 class="imh-feature-heading" x-text="data.expert[4]">Why Choose Irish-ManualHandling.com?</h4>
+                    <h4 class="imh-feature-heading" >Why Choose manualhandling-ireland.com?</h4>
 
                     <div class="imh-feature-item">
                         <span class="imh-feature-icon">📋</span>
@@ -594,7 +606,7 @@
             </div>
 
             <div class="imh-expert-footer">
-                <p x-text="data.expert[7]">Ensure your team's safety and efficiency—choose Irish-ManualHandling.com today!</p>
+                <p >Ensure your team's safety and efficiency—choose manualhandling-ireland.com today!</p>
             </div>
         </div>
     </section>
