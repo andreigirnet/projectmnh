@@ -5,8 +5,5 @@
             Register For Manual Handling Certification
         </a>
     </div>
-    <div id="layer">
-
-    </div>
 </div>
 
